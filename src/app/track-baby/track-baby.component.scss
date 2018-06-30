@@ -1,0 +1,67 @@
+@import "../../assets/variables.scss";
+
+.trackBaby{
+  
+   .paddTop {
+     padding-top: 110px;
+   }  
+   .paddBottom{
+    padding-bottom: 110px;
+
+   }
+   .marginBottom{
+       margin-bottom: 140px;
+   } 
+    .track{
+        background-color: white;
+        box-shadow:5px 5px 10px #80808024  ;
+        h5{
+            font-size: 15px;
+            color: black;
+        }
+        .pink{
+            font-size: 13px;
+            color: $blue;
+        }
+        .blue{
+            font-size: 13px;
+            color: $pink;
+        }
+    }
+    input{
+    border-radius: 10px;
+    border: solid 2px $pink;
+    color: $inputGrey;
+    }
+}
+
+.trackbg{
+    background-image:url('/assets/images/trackbaby/bg5-02.png') ;
+    background-repeat: no-repeat !important;
+
+}
+
+.move{
+    width:200px;
+    height: 200px;
+    position: relative;
+    -webkit-animation-name: example; 
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function:linear;
+
+
+}
+
+
+
+
+@keyframes example {
+    0%   { left:0px; }
+    100% {left:calc(100vw - 250px);
+    }
+}
+
+

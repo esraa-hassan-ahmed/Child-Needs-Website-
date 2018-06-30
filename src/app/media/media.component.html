@@ -1,0 +1,60 @@
+<div class="secshop margin">
+  <div class="secBg text-center">
+    <h1>Media</h1>
+    <span><a routerLink="/">HOME</a></span>
+    <span><a class="clicked">VIDEOS</a></span>
+  </div>
+</div> 
+<section class="container">
+    <nav class="navbar navbar-ligh mb-5">
+        <form class="form-inline">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search For a video" aria-label="Username" aria-describedby="basic-addon1" name="search" [(ngModel)]="term">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1"><i class="fa fa-search"></i></span>
+            </div>
+          </div>
+        </form>
+      </nav>
+  <ngb-carousel class="margin" data-interval="false">
+    <ng-template ngbSlide>
+      <div class="row">
+        <div class="col-md-4 books mediaa " *ngFor="let data of videoData |filter:term">
+          <div class="card mb-5" >
+            <div class="cardImg">
+              <!-- <div [innerHTML]="data.link"></div> -->
+              <!-- <div [innerHTML]='"<h1>kkk</h1>"'></div> -->
+              <div> <iframe class='w-100' [src]="getEmbedURL(data.link)" frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe></div>
+            </div> 
+            <!-- "link":"<div> <iframe class='w-100' src='http://www.youtube.com/embed/W7qWa52k-nE' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe></div>", -->
+    
+            <div class="card-body ">
+              <h5 class="card-title mb-0">{{data.name}}</h5>
+              <p class="card-text par mb-0">By : <span>{{data.by}} </span></p>
+              <span class="card-text par mb-0">{{data.views}} Views </span>
+            </div>
+            <div class="time">{{data.time}} </div>
+          </div> 
+        </div>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="row">
+        <div class="col-md-4 books mediaa " *ngFor="let data of videoData">
+          <div class="card mb-5" >
+            <div class="cardImg">
+              <div> <iframe class='w-100' [src]="getEmbedURL(data.link)" frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe></div>
+            </div> 
+    
+            <div class="card-body ">
+              <h5 class="card-title mb-0">{{data.name}}</h5>
+              <p class="card-text par mb-0">By : <span>{{data.by}} </span></p>
+              <span class="card-text par mb-0">{{data.views}} Views </span>
+            </div>
+            <div class="time">{{data.time}} </div>
+          </div> 
+        </div>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</section>

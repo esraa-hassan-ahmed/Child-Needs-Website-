@@ -1,0 +1,72 @@
+@import "../../assets/variables.scss";
+.secshop{
+    background-image:url('/assets/images/view-cart/bg4.png');
+    background-position: top;
+}
+
+
+.view-cart{
+    .subtotal{
+        font-size:30px;
+    }
+
+table{
+    thead{
+    background-color:$pink;
+    color: white; 
+    th{
+        font-family: 'Nunito';
+    }
+    }
+    .cart-img{
+      width:200px;
+      height:200px;
+      p{
+          color: $cardGray;
+          font-family: 'NunitoLight';
+
+      }
+    }
+    tr{
+        border-bottom:1px solid gray;
+        .delete{
+            font-size: 26px;
+        }
+    }
+    td , th{
+        vertical-align:middle;
+        border-top:0px;
+        font-family: 'NunitoLight'
+        
+    }
+    // td{
+    //     span{
+    //         border:1px solid gray;
+    //         height:25px;
+    //         display:inline-block;
+
+    //     }
+    // }
+    // input{
+    //     width:40px;
+    //     height:25px;
+    // }
+}
+}
+// media query
+
+// @media (max-width:  768px) {
+//     .about-item
+//     {
+//      display: none;
+
+
+//     }
+// }
+
+
+.img-list{
+    width: 180px;
+    height: 207px;
+    overflow: hidden;
+}

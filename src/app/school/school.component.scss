@@ -1,0 +1,143 @@
+@import "../../assets/variables.scss";
+.secshop{
+    background-image: url('/assets/images/school/header.jpg'); 
+}
+.buttons, .secBg{
+    margin-bottom: 60px;
+}
+.buttons{
+    .col-6{
+        padding: 0;
+        margin-bottom: 16px;
+        flex:0;
+        .button-shadow{
+            padding: 0;
+            width: 140px;
+            height: 40px;
+        }
+    }
+}
+.blueBtn{
+    background-color: #B066D8;
+}
+.greenBtn{
+    background-color: $green;
+}
+.orangeBtn{
+    background-color: $orange;
+}       
+.card{
+    height: 380px;
+    .cardImg{
+        .hover{  
+            display: flex;
+            align-items:center;
+            justify-content:center;
+            text-align: center;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(black,0.4);
+            opacity: 0; 
+            transition: all 0.3s linear;
+            div{
+                p{
+                    width:75%; 
+                    margin: 1rem auto;
+                    font-size: 16px;    
+                }  
+                .button-shadow{
+                    box-shadow: none;
+                    border: none;
+                }
+                .button-shadow:hover{
+                    background-color: $blue;
+                    transition: background-color 0.5s ease-in-out;
+                }
+                button{
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
+                } 
+            }                
+        }
+        .hover:hover{
+            opacity:1;
+            cursor: pointer;
+        }
+    }
+    .card-body{
+        p{
+            color: #696464;
+            font-size: 15px;           
+        }
+    }
+}
+
+@media all and (max-width:991px){
+    .card{
+        height: 340px;
+        .cardImg{
+            .hover{  
+                div{
+                    p{
+                        font-size: 11px;
+                    }
+                    .button-shadow{
+                        font-size: 14px;
+                        width: 115px;
+                        height: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width:767px){
+    .card{
+        height: 320px;
+        .cardImg{
+            .hover{  
+                div{
+                    p{
+                        font-size: 8px;
+                        margin-bottom: 8px;
+                    }
+                    .button-shadow{
+                        font-size: 12px;
+                        width: 100px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+        .card-body{
+            h5{
+                font-size: 16px;
+            }
+            p{
+                font-size: 14px;           
+            }
+        }
+    }
+}
+@media all and (max-width:575px){
+    .card{
+        height: inherit;
+        .cardImg{
+            .hover{  
+                div{
+                    p{
+                        font-size: 16px;
+                        margin-bottom: 12px;
+                    }
+                    .button-shadow{
+                        font-size: 16px;
+                        width: 140px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

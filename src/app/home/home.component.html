@@ -1,0 +1,114 @@
+  <ngb-carousel class="margin">
+    <ng-template ngbSlide>
+      <img src="../assets/images/home/mainHeader1.jpeg" alt="Random first slide">
+      <div class="carousel-caption d-flex align-items-center justify-content-center">
+        <h1>In Our Website Everything To Know For Your Kids</h1>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <img src="../assets/images/home/mainHeader2.jpeg" alt="Random second slide">
+      <div class="carousel-caption d-flex align-items-center justify-content-center">
+          <h1>Everything To Know For Your Kids</h1>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <img src="../assets/images/home/mainHeader3.jpeg" alt="Random third slide">
+      <div class="carousel-caption d-flex align-items-center justify-content-center">
+          <h1>Everything To Know For Your Kids</h1>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+
+  <div id="sec1" class="container Categories text-center margin">
+    <h2 class="text-center mb-2">Categories</h2>
+    <img src="../../assets/images/home/baby.png" class="mb-5"/>
+    <div class="row">
+
+      <div class="col-lg-3 col-sm-12">
+        <div class="col-sm-4">
+          <button type="button" class="btn mb-4 dropMenu" (click)="getSec2Data()">      
+            PLACES
+          </button>
+        </div>
+        <div class="col-sm-4">
+          <button type="button" class="btn mb-4 dropMenu" (click)="getSec2Media()">      
+            MEDIA
+          </button>
+        </div>
+        <div class="col-sm-4">
+          <button type="button" class="btn mb-4 dropMenu" (click)="getSec2Events()">      
+            EVENTS
+          </button>
+        </div>
+      </div>
+
+      <div class="col-lg-9">
+        <div class="card-columns col-12 categRight">
+          <div class="card text-center" *ngFor="let cd of sec2Data; let i = index;">
+            <div>
+                <img class="card-img-top" [src]="cd.img">
+                <div class="card-body">
+                  <h5 class="card-title">{{cd.head}}</h5>
+                  <p class="card-text mt-3">{{cd.par}}</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<div class="text-center ">
+<div id="sec2" class="text-center margin">
+  <h2 class="text-center mb-2">Play With Us</h2>
+  <img src="../../assets/images/home/baby.png" class="mb-5"/>
+  <div class="secPlay">
+      <div class="container">
+          <div class="play text-center ml-auto">
+            <h5>Play Your Game</h5>
+            <p class="pt-2">Your child can play these games to improve his skills and make him think more and entertain his time .</p>
+            <button type="button" class="btn mb-4 button-shadow" (click)="redirectToPlay()">Play</button>
+          </div>
+      </div>
+    </div>
+</div>
+
+
+<app-sec3></app-sec3>
+
+
+
+<section class="container home-contact margin">
+  <div class="movegirl">
+      <img class="girlImg" src="../assets/images/home/girl1ornament.png">
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-12 text-center pb-3">
+      <h2>Contact Us</h2>
+      <img src="../../assets/images/home/baby.png" class="mb-5"/>
+    </div>
+    <div class="col-lg-5 col-md-7">
+      <form  name="contactForm" #contactForm ="ngForm" novalidate (ngSubmit)="contactUs(contactForm)">
+        <div class="form-group">
+          <input class="form-control w-100 inputForm" type="text" placeholder="Name" name="user_name" [(ngModel)]="user_name" required> 
+        </div>
+        
+        <div class="form-group">
+              <input type="email " class="form-control w-100 inputForm" id="exampleFormControlInput1" placeholder="Email"  name="user_email" [(ngModel)]="user_email" required>
+        </div>
+    
+        <div class="form-group">
+            <textarea class="form-control textareaForm w-100" id="exampleFormControlTextarea1" rows="6" placeholder="Message..."  name="user_message" [(ngModel)]="user_message" required></textarea>
+        </div>
+        <div class="text-center ">
+          <button type="submit" class="btn button-shadow" [disabled]="!contactForm.valid">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section> 
+<div class="scroll">
+  <a href="javascript:" id="return-to-top"><img src="../../assets/images/scrol.png" class="img-fluid"></a>
+</div>
+

@@ -1,0 +1,232 @@
+@import "../../assets/variables.scss";
+.carousel-caption{
+    height:100% ;
+}
+img{
+    filter: grayscale(30%);
+}
+h1{
+    width: 60%;
+}
+
+ngb-carousel /deep/ .carousel-indicators li{
+    width:10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+ngb-carousel /deep/ .carousel-indicators .active{
+    background-color: $pink;
+}
+
+ngb-carousel /deep/ .carousel-control-prev-icon{
+    background-image: none;
+}
+ngb-carousel /deep/ .carousel-control-next-icon{
+    background-image: none;
+}
+ngb-carousel /deep/ .carousel-control-next,
+ngb-carousel /deep/ .carousel-control-prev{
+    opacity: 0;
+}
+.Categories{
+    button{
+        width: 141px;
+        height: 79px;
+        color: black;
+    }
+    button:focus{
+        color: white;
+        background-color: $pink;
+        box-shadow:none;
+    }
+    .categRight{
+        border: solid 2px $blue;
+        border-radius: 10px;
+        padding-top: 55px;
+        padding-bottom: 20px;
+        .card{
+            border: none;
+            img{
+                width: 50px;
+                height: 50px;
+            }
+            h5{
+                background-color: #ffb539;
+                border-radius: 10px;
+                padding: 7px;
+                // width: 187px;
+                margin: 0 auto;
+                font-size: 15px;
+                transition: transform 0.5s;
+            }
+            h5:hover{
+                animation: shake 0.5s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes shake {
+                0% { transform: translate(1px, 1px) rotate(0deg); }
+                10% { transform: translate(-1px, -2px) rotate(-1deg); }
+                20% { transform: translate(-3px, 0px) rotate(1deg); }
+                30% { transform: translate(3px, 2px) rotate(0deg); }
+                40% { transform: translate(1px, -1px) rotate(1deg); }
+                50% { transform: translate(-1px, 2px) rotate(-1deg); }
+                60% { transform: translate(-3px, 1px) rotate(0deg); }
+                70% { transform: translate(3px, 1px) rotate(-1deg); }
+                80% { transform: translate(-1px, -1px) rotate(1deg); }
+                90% { transform: translate(1px, 2px) rotate(0deg); }
+                100% { transform: translate(1px, -2px) rotate(-1deg); }
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+
+
+.secPlay{
+    background-image: url('../../assets/images/home/bg_calltoaction1.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 115px 0px;
+    .play{
+        box-shadow: 4px 7px 10.27px 2.73px rgba(49, 47, 47, 0.23); 
+        width: 372px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 35px 39px;
+        p{
+            font-size: 12px;
+        }
+    }
+   
+}
+
+
+
+
+
+//contact us
+
+.home-contact{
+    position:relative;
+    .movegirl{
+        position: relative;
+        -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+        animation-name: example;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function:linear;
+        .girlImg{
+            position:absolute;
+            top:-220px;
+            left:0px;
+        }
+    }
+    @keyframes example {
+        0%   { 
+             left:0px; 
+        }
+        100% {
+             left:100px;
+        }
+      
+    }
+
+
+    button{
+        background-color: $pink;
+        color: white;
+        transition: all 0.2s linear;
+    }
+  
+}
+
+@media all and (max-width:1200px){
+    .Categories{
+        .categRight{
+            padding-top: 45px;
+            padding-bottom: 15px;
+            .card{
+                h5{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width:992px){
+    .Categories{
+        .col-sm-12{
+            display: flex;
+            div{
+                padding: 0px;
+            }
+        }
+    }
+}
+
+@media all and (max-width:579px){
+    .Categories{
+        button{
+            width: 90px;
+            height: 59px;
+        }
+        .categRight{
+            .card{
+                h5{
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+}
+
+@media all and (max-width:400px){
+    .secPlay{
+        .play{
+            width: initial;
+        }
+    }
+}
+
+
+
+
+
+
+
+@media all and (max-width:907px){
+    // .movegirl{
+    //    animation-name: none !important;
+    // }
+    .movegirl{
+        display: none;
+    }
+}
+  
+
+
+#return-to-top {
+
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    // -webkit-transition: all 0.3s 
+}
+
+.scroll{
+    width:70px;
+    height: 150px;
+    position: fixed;
+    bottom: 5px;
+    right: 20px;
+}

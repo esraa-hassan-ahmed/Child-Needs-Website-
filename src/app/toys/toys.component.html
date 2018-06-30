@@ -1,0 +1,159 @@
+<div class="secshop margin">
+  <div class="secBg text-center">
+    <h1>OUR PRODUCTS</h1>
+    <span><a routerLink="/">HOME</a></span>
+    <span><a class="clicked">TOYS</a></span>
+  </div>
+</div> 
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <h4>Shop By Type</h4>
+      <form class="form">
+        <div class="inputGroup">
+          <input id="radio1" name="radio" type="radio" routerLink="shop"/>
+          <label for="radio1">Clothes</label>
+          <div class="check"></div>
+        </div>
+        <div class="inputGroup">
+          <input id="radio2" name="radio" type="radio" CHECKED/>
+          <label for="radio2">Toys</label>
+          <div class="check"></div>
+        </div>
+      </form>
+      <h4>Shop By Price</h4>
+      <form class="form">
+        <div class="inputGroup">
+            <input (click)= "addPrice(10,100)" id="radio3" name="radio" type="radio"/>
+            <label for="radio3">10 LE - 100 LE</label>
+            <div class="check"></div>
+        </div>
+        <div class="inputGroup">
+          <input (click)= "addPrice(100,300)" id="radio3" name="radio" type="radio"/>
+          <label for="radio3">100 LE - 300 LE</label>
+          <div class="check"></div>
+        </div>
+        <div class="inputGroup">
+          <input (click)= "addPrice(300,500)" id="radio4" name="radio" type="radio"/>
+          <label for="radio4">300 LE - 500 LE</label>
+          <div class="check"></div>
+        </div>
+      </form>
+      
+      <h4>Shop By Color</h4>
+      <ul class="margin">
+        <li>
+          <a (click)="addColor('red')">
+              <i class="fa fa-circle" style="color:red"></i>
+            <span>Red</span>
+          </a>
+        </li>
+        <li>
+          <a (click)="addColor('blue')">
+              <i class="fa fa-circle" style="color:blue"></i>
+            <span>Blue</span>
+          </a>
+        </li>
+        <li>
+          <a (click)="addColor('orange')">
+              <i class="fa fa-circle" style="color:orange"></i>
+            <span>Orange</span>
+          </a>
+        </li>
+        <li>
+          <a (click)="addColor('pink')">
+              <i class="fa fa-circle" style="color:pink"></i>
+            <span>Pink</span>
+          </a>
+        </li>
+        <li>
+          <a (click)="addColor('cyan')">
+              <i class="fa fa-circle" style="color:cyan"></i>
+            <span>Cyan</span>
+          </a>
+        </li>
+        <li>
+            <a (click)="addColor('yellow')">
+                <i class="fa fa-circle" style="color:yellow"></i>
+              <span>Yellow</span>
+            </a>
+        </li>
+        <li>
+          <a (click)="addColor('green')">
+              <i class="fa fa-circle" style="color:green"></i>
+            <span>Green</span>
+          </a>
+        </li>
+        <li>
+          <a (click)="addColor('brown')">
+              <i class="fa fa-circle" style="color:brown"></i>
+            <span>Brown</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-12 col-md-8">
+      <div class="row">
+          <div class="col-6 text-left ">
+              <button class="allBtn">ALL</button>
+          </div>
+            <div class="col-6 text-right">
+                <div class="btn-group mb-5 dropDownData mr-auto ml-auto">
+                    <button id="myText" type="button" class="inputBtn btn btn-primary left">Sort By</button>
+                    <div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
+                      <button class="btn btn-primary dropdown-toggle-split right" ngbDropdownToggle></button>
+                      <div class="dropdown-menu" ngbDropdownMenu style="right:0px ;left:auto">
+                        <button (click)= "arrange('ascending')" class="dropdown-item">Price, low to high</button>
+                        <button (click)= "arrange('descending')" class="dropdown-item">Price, high to low</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+      <ngb-carousel class="margin" data-interval="false">
+        <ng-template ngbSlide>
+          <div class="card-columns" >
+            <div class="card mb-5 text-center" *ngFor="let data of toysData">
+              <div class="cardImg">  
+                <div class="hover">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-secondary" [routerLink]="['/toys/item',data.id]"><i class="fa fa-eye"></i></button>
+                        <button type="button" class="btn btn-secondary cart" (click)="addItemToCart(data.id)"><i class="fa fa-shopping-cart"></i></button>
+                        <button type="button" class="btn btn-secondary cart" (click)="addWishListCart(data.id)"><i class="fa fa-heart"></i></button>
+                    </div>
+                </div>              
+                <img class="card-img-top" [src]="data.pic" alt="Card image cap">
+              </div> 
+              <div class="card-body">
+                <h5 class="card-title">{{data.name}}</h5>
+                <p class="card-text pr-2">{{data.price}} <span>LE</span></p>
+                <ngb-rating [rate]="3" [readonly]="true" max="5"></ngb-rating>
+              </div>
+            </div> 
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="card-columns" >
+            <div class="card mb-5 text-center" *ngFor="let data of toysData">
+              <div class="cardImg">  
+                <div class="hover">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-secondary" [routerLink]="['/toys/item',data.id]"><i class="fa fa-eye"></i></button>
+                        <button type="button" class="btn btn-secondary" (click)="addItemToCart(data.id)"><i class="fa fa-shopping-cart"></i></button>
+                        <button type="button" class="btn btn-secondary" (click)="addWishListCart(data.id)"><i class="fa fa-heart"></i></button>
+                    </div>
+                </div>              
+                <img class="card-img-top" [src]="data.pic" alt="Card image cap">
+              </div> 
+              <div class="card-body">
+                <h5 class="card-title">{{data.name}}</h5>
+                <p class="card-text">{{data.price}} </p>
+                <ngb-rating [rate]="5" [readonly]="true" max="5"></ngb-rating>
+              </div>
+            </div> 
+          </div>
+        </ng-template>
+      </ngb-carousel>
+    </div>
+  </div>
+</div>

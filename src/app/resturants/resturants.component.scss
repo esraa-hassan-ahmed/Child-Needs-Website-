@@ -1,0 +1,56 @@
+@import "../../assets/variables.scss";
+.secshop{
+    background-image:url('/assets/images/resturant/resturant.png');
+}
+.card{
+    height: 480px;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    border: none;
+    .cardImg{
+        position: relative;
+        .hover{
+            position: absolute;  
+            display: flex;
+            align-items:center;
+            justify-content:center;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(black,0.4);
+            opacity: 0;
+            transition: all 0.3s linear;
+
+            span{
+                border-radius: 50%;
+                background-color: $pink;
+                padding: 9px 10px;
+                img{
+                    width: 22px;
+                    height: 20px;
+                }
+            }
+        }
+        .hover:hover{
+            opacity:1;
+        }
+    }
+    .card-body{
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        .par{
+            color: #696464;
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+    }
+}
+
+@media all and (max-width:576px){
+    .card{
+        height: initial;
+    }
+}

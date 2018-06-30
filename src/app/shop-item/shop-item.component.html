@@ -1,0 +1,48 @@
+<div class="container shopItem">
+  <div class="row">
+    <div class="col-lg-4">
+      <img [src]="itemData.pic">
+    </div>
+    <div class="col-lg-6">
+      <h4>{{itemData.name}}</h4>
+      <p class="pt-3">{{itemData.body}}</p>
+      <span>Price:</span><span class="redPrice ml-2 " id="price">{{itemData.price}}</span><span class="redPrice">LE</span>
+      <div class="row">
+        <div class="col-lg-6">
+          <p class="mt-4 mb-2">Color</p>
+          <div class="btn-group">
+            <button id="myText" type="button" class="selectBtn btn dropMenu d-flex align-items-center pl-2 pr-5 pb-1 pt-1">{{itemData.color}}</button>
+            <div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
+              <button class="btn btn-primary dropdown-toggle-split dropMenuToggle d-flex align-items-center" ngbDropdownToggle></button>
+              <div class="dropdown-menu" ngbDropdownMenu>
+                <button class="dropdown-item">yellow</button>
+                <button class="dropdown-item">blue</button>
+                <button class="dropdown-item">red</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-4 mb-2 " >Quantity</p>
+      <nav class="item-nav" aria-label="...">
+        <ul class="pagination">
+          <li class="page-item disabled minus" (click)="minus(itemData.quantity)">
+            <a class="page-link background " tabindex="-1" ><i class="fa fa-minus"></i></a>
+          </li>
+          <li class="page-item"><a class="page-link quantity" id="a" >{{itemData.quantity}}</a></li>
+          <li class="page-item plus" (click)="plus(itemData.quantity)">
+            <a class="page-link background"><i class="fa fa-plus"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <br>
+      <span>Subtotal:</span><span class="redPrice ml-2" id="itemTotal">{{itemData.price}}</span> <span class="redPrice">LE</span> <br>
+      <div class="mt-5 margin">
+        <button type="button" class="btn button-shadow mr-3 top" (click)="addItemToCart(itemData.id)">ADD TO CART</button>
+        <button type="button" class="btn button-shadow" (click)="addWishListCart(itemData.id)">ADD TO Wish List</button>
+      </div>
+     
+    </div>
+  </div>
+</div>
+

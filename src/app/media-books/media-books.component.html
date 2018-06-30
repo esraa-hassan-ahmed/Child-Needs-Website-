@@ -1,0 +1,64 @@
+<div class="secshop margin">
+  <div class="secBg text-center">
+    <h1>Media</h1>
+    <span><a routerLink="/">HOME</a></span>
+    <span><a class="clicked">BOOKS</a></span>
+  </div>
+</div> 
+<section class="container">
+    <nav class="navbar navbar-ligh mb-5">
+        <form class="form-inline">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search For a book" aria-label="Username" aria-describedby="basic-addon1" name="search" [(ngModel)]="term">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1"><i class="fa fa-search"></i></span>
+            </div>
+          </div>
+        </form>
+      </nav>
+<ngb-carousel class="margin" data-interval="false">
+  <ng-template ngbSlide>
+    <div class="row">
+      <div class="col-md-4 books mb-5 " *ngFor="let x of booksdata |filter:term">
+        <div class="card">
+          <div class="main-img">
+            <img class="card-img-top img-fluid " src="{{x.img}}">
+             <div class="hover d-flex align-items-center justify-content-center" >
+              <div class="zoomIcon d-flex align-items-center justify-content-center ">
+                  <a href="{{x.pdf}}"><i class="fa fa-download"></i></a>
+               </div>
+             </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title mb-1"> {{x.name}}</h5>
+            <p class="card-text"> by: <span> {{x.author}} </span></p>
+            <p class="card-text">{{x.rate}}</p>     
+          </div>
+        </div>
+    </div>
+  </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="row">
+      <div class="col-md-4 books mb-5 " *ngFor="let x of booksdata ">
+        <div class="card">
+          <div class="main-img">
+            <img class="card-img-top img-fluid " src="{{x.img}}">
+            
+             <div class="hover d-flex align-items-center justify-content-center" >
+              <div class="zoomIcon d-flex align-items-center justify-content-center ">
+                  <a href="{{x.pdf}}"><i class="fa fa-download"></i></a>
+               </div>
+             </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title mb-1"> {{x.name}}</h5>
+            <p class="card-text"> by: <span> {{x.author}} </span></p>
+            <p class="card-text">{{x.rate}}</p>     
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</ngb-carousel>
+</section>

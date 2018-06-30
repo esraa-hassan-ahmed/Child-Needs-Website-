@@ -1,0 +1,89 @@
+<div class="secshop margin">
+    <div class="secBg text-center">
+      <h1>Events</h1>
+      <span><a routerLink="/">HOME</a></span>
+      <span><a class="clicked">EVENTS</a></span>
+    </div>
+  </div> 
+  <div class="container">
+    <ngb-tabset >
+        <ngb-tab>
+            <ng-template ngbTabTitle>
+                <div (click)="geteventsData()" class="all">ALL</div>
+            </ng-template>
+        </ngb-tab>
+        <ngb-tab >
+          <ng-template ngbTabTitle>
+            <div (click)="getABeventsData()"  class="tabs">Alexandria Bibliotheca</div>
+          </ng-template>
+        </ngb-tab>
+        <ngb-tab>
+            <ng-template ngbTabTitle>
+                <div (click)="getACeventsData()"  class="tabs" >Alexandria Center of Arts</div>
+            </ng-template>
+        </ngb-tab>
+        <ngb-tab>
+            <ng-template ngbTabTitle>
+                <div (click)="getPCeventsData()"  class="tabs" >Palace of Culture</div>
+            </ng-template>
+        </ngb-tab>
+    </ngb-tabset>
+    <ngb-carousel class="margin" data-interval="false">
+        <ng-template ngbSlide>
+            <div class="card-columns" >
+                <div class="card mb-5" *ngFor="let data of eventsData">
+                  <div class="cardImg">
+                      <div class="hover">
+                        <div>
+                          <p>{{data.imgDate}}</p>
+                          <p>{{data.imgMonth}}</p>
+                        </div>
+                      </div>
+                      <div class="allDiv">
+                          <div class="hover2">
+                              <p>{{data.place}}</p>
+                          </div>
+                      </div>           
+                      <img class="card-img-top" src="{{data.img}}" alt="Card image cap">
+                  </div> 
+                  <div class="card-body pl-0">
+                    <h5 class="card-title">{{data.name}}</h5>
+                    <p class="card-text">{{data.type}} </p>      
+                    <p class="card-text">{{data.location}} </p>
+                    <p class="card-text">{{data.date}} </p> 
+                    <p class="card-text">{{data.description}} </p> 
+                    <button class="button-shadow"><a href="{{data.link}}" target="_blank">CHECK IT</a></button>  
+                  </div>
+                </div> 
+              </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="card-columns" >
+                <div class="card mb-5" *ngFor="let data of eventsData">
+                  <div class="cardImg">
+                      <div class="hover">
+                        <div>
+                          <p>{{data.imgDate}}</p>
+                          <p>{{data.imgMonth}}</p>
+                        </div>
+                      </div>
+                      <div class="allDiv">
+                          <div class="hover2">
+                              <p>{{data.place}}</p>
+                          </div>
+                      </div>           
+                      <img class="card-img-top" src="{{data.img}}" alt="Card image cap">
+                  </div> 
+                  <div class="card-body pl-0">
+                    <h5 class="card-title">{{data.name}}</h5>
+                    <p class="card-text">{{data.type}} </p>      
+                    <p class="card-text">{{data.location}} </p>
+                    <p class="card-text">{{data.date}} </p> 
+                    <p class="card-text">{{data.description}} </p> 
+                    <button class="button-shadow"><a href="{{data.link}}" target="_blank">CHECK IT</a></button>  
+                  </div>
+                </div> 
+              </div>
+        </ng-template>
+      </ngb-carousel>
+  </div>

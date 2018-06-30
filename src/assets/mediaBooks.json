@@ -1,0 +1,30 @@
+[
+    {
+        "img":"../assets/images/media/book1.PNG",
+        "pdf":"https://catalogue.pearsoned.co.uk/preface/0132286211.pdf",
+        "name":"Early Childhood Education Today",
+        "author":"George S.Morrison",
+        "rate":""
+    },
+    {
+        "img":"../assets/images/media/book2.PNG",
+        "pdf":"https://www.aetnabetterhealth.com/pennsylvania/assets/pdf/health-and-wellness/extra-programs/abhpa-baby-book.pdf",
+        "name":"Aetna Better Health",
+        "author":"George S.Morrison",
+        "rate":""
+    },
+    {
+        "img":"../assets/images/media/book3.PNG",
+        "pdf":"http://www.pcrm.org/sites/default/files/pdfs/health/Nutrition_for_Kids.pdf",
+        "name":"Nutrition For Kids",
+        "author":"Tims John",
+        "rate":""
+    },
+    {
+        "img":"../assets/images/media/book4.PNG",
+        "pdf":"http://www.babyyourbaby.org/pdfs/newborncare.pdf",
+        "name":"New Born Care",
+        "author":"Tims John",
+        "rate":""
+    } 
+]

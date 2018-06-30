@@ -1,0 +1,32 @@
+[
+    {
+      "drImg":"../assets/images/doctors/amrAbbassy.jpg",
+      "name":"Amr Abbassy",
+      "drSpecialization":"Women and Obstetrics",
+      "address":"18 st , Loran Alexandria",
+      "number":"0128900321",
+      "facebook":"https://www.facebook.com/queenclinic/?ref=br_rs",
+      "gmail":"http://www.gmail.com",
+      "skype":"https://www.skype.com/en/"
+    },
+    {
+      "drImg":"../assets/images/doctors/alaa.jpg",
+      "name":"Alaa Fahmy",
+      "drSpecialization":"Women and Obstetrics",
+      "address":"18 st , sdi gaber Alexandria",
+      "number":"0122002591",
+      "facebook":"https://www.facebook.com/DrAlaaHamed88/?ref=br_rs",
+      "gmail":"http://www.gmail.com",
+      "skype":"https://www.skype.com/en/"
+    },
+    {
+      "drImg":"../assets/images/doctors/amr.jpg",
+      "name":"Amr Mahmoud",
+      "drSpecialization":"Women and Obstetrics",
+      "address":"50 st , victoria Alexandria",
+      "number":"0120035411",
+      "facebook":"https://www.facebook.com/Women.Health.ACOGA.1/?ref=br_rs",
+      "gmail":"http://www.gmail.com",
+      "skype":"https://www.skype.com/en/"
+    }
+  ]

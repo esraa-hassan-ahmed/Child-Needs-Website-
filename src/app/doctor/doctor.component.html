@@ -1,0 +1,127 @@
+<section class="doctors">
+  <div class="secshop margin">
+    <div class="secBg text-center">
+      <h1>Doctors</h1>
+      <span><a routerLink="/">HOME</a></span>
+      <span><a class="clicked">DOCTORS</a></span>
+    </div>
+  </div> 
+</section>
+
+
+
+<section class="container  pt-3 pb-5 ">
+    <div class="text-right">
+        <div class="btn-group mb-5 dropDownData mr-auto ml-auto">
+            <button id="myText" type="button" class="inputBtn btn btn-primary left pr-5"> Specialization</button>
+            <div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
+              <button class="btn btn-primary dropdown-toggle-split right" ngbDropdownToggle></button>
+              <div class="dropdown-menu" ngbDropdownMenu style="right:0px ;left:auto">
+                <button class="dropdown-item" (click)="getDrData()">All</button>
+                <button class="dropdown-item" (click)="getConsultantData()">Consultant Psychiatrist</button>
+                <button class="dropdown-item" (click)="getWomentData()">Women and Obstetrics</button>
+                <button class="dropdown-item" (click)="getDentistData()">Dentist</button>
+              </div>
+            </div>
+          </div>
+      </div>
+
+  <div class="row">
+    <div class="col-md-4 doctors " *ngFor="let x of drdata ">
+      <div class="card mb-5">
+        <div class="main-img">
+          <img class="card-img-top img-fluid " src="{{x.drImg}}">
+           <div class="hover d-flex align-items-center justify-content-center" >
+             <div class="zoomIcon d-flex align-items-center justify-content-center ">
+                <i class="  fa fa-search-plus" (click)="openVerticallyCentered(content)"></i>
+             </div>
+           </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title mb-1"> {{x.name}}</h5>
+          <h6 class=" mb-3 ">{{x.drSpecialization}}</h6>
+          <p class="card-text"><i class="fa fa-map-marker pr-2"></i>{{x.address}}</p>
+          <p class="card-text"><i class="fa fa-mobile pr-2"></i>{{x.number}}</p>
+          <div class="d-flex">
+            <a [href]="x.facebook" class="socialMedia facebook d-flex align-items-center justify-content-center mr-3" ><i class="fa fa-facebook-f "></i></a>
+            <a [href]="x.gmail" class="socialMedia google d-flex align-items-center justify-content-center mr-3"><i class="fa fa-google-plus "></i></a>
+            <a [href]="x.skype" class="socialMedia skype d-flex align-items-center justify-content-center"><i class="fa fa-skype"></i></a>
+          </div>
+        </div>
+
+        <ng-template #content let-c="close" let-d="dismiss">
+          <div class="modal-header">
+            <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="card-img-top " src="{{x.drImg}}">
+          </div>
+        </ng-template>
+      </div>  
+    </div>
+  </div>
+</section>
+
+
+<section class="pt-5 pb-5  add-doctor">
+  <div class="container">
+    <div class="row ">
+      <div class="col-6 pb-3 ">
+        <h3 class="mb-2">ADD DOCTOR</h3>
+      </div>
+      <div class="col-12 ">
+        <div class="row">
+          <form class="d-flex w-100" name="addDrForm" #addDrForm ="ngForm" novalidate (ngSubmit)="addDR(addDrForm)">
+            <div class="col-md-6 ">
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Doctor's name"  name="dr_name" [(ngModel)]="dr_name" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Address"  name="dr_address" [(ngModel)]="dr_address" required>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="facebook "  name="dr_facebook" [(ngModel)]="dr_facebook" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Gmail"  name="dr_gmail" [(ngModel)]="dr_gmail" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Skype"  name="dr_Skype" [(ngModel)]="dr_Skype" required>
+                </div>
+
+
+            </div>
+
+            <div class="col-6 ">
+              <div class="form-group">
+                  <select class="form-control w-100" id="exampleFormControlSelect1">
+                    <option>Specialization</option>
+                    <option>Women and Obstetrics</option>
+                    <option>Dentist</option>
+                    <option>Consultant Psychiatrist</option>
+                  </select>
+              </div>
+
+              <div class="form-group">
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Description..."  name="dr_description" [(ngModel)]="dr_description" required></textarea>
+              </div>
+              <div class="d-flex justify-content-end ">
+                <button type="submit" class="btn " [disabled]="!addDrForm.valid">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+<!-- modal -->
+
+
+

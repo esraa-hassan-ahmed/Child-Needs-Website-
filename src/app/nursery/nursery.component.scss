@@ -1,0 +1,95 @@
+@import "../../assets/variables.scss";
+.secshop{
+    background-image: url('/assets/images/school/header2.jpg');
+}
+.card{
+    height: 600px;
+    .cardImg{
+        .hover{ 
+            display: flex;
+            align-items:center;
+            justify-content:center;
+            text-align: center;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(black,0.4);
+            opacity: 0;          
+            transition: all 0.3s linear;
+        }
+        .hover:hover{
+            opacity:1;
+            cursor: pointer;
+        }
+    }
+    .card-body{
+        p{
+            color: #696464;
+            font-size: 15px;           
+        }
+        .par{
+            margin-top: 10px;
+        }
+        .par2{
+            margin-bottom: 25px;
+        }
+        ul{
+            list-style: none;
+            margin-left: 0;
+            padding-left: 0;
+            .col-4{
+                padding: 0;
+            }
+            li{
+                display: inline-block;
+                color: white;
+                padding: 13px 5px 13px 5px;
+                font-size: 12px;
+                text-align: center;
+                width: 100%;
+            }
+            .pinkSpan{
+                background-color: $pink;
+            }
+            .orangeSpan{
+                background-color: $orange;
+            }
+            .blueSpan{
+                background-color: $blue;
+            }
+        }       
+    }
+}
+@media all and (max-width:991px){
+    .card{
+        .card-body{
+            ul{
+                li{
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width:767px){
+    .card{
+        .card-body{
+            ul{
+                li{
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width:575px){
+    .card{
+        height: inherit;
+        .card-body{
+            ul{
+                li{
+                    font-size: 12px;                 
+                }
+            }
+        }
+    }
+}

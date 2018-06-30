@@ -1,0 +1,87 @@
+<div class="secshop">
+  <div class="secBg text-center">
+    <h1>Schools</h1>
+    <span><a routerLink="/">HOME</a></span>
+    <span><a class="clicked">SCHOOLS</a></span>
+  </div>
+</div> 
+<div class="container">
+  <div class=" buttons d-flex justify-content-center">
+    <div class="row d-flex justify-content-center">
+      <div class="col-6 col-md-3">
+          <button (click)="getschoolData()" type="button " class="button-shadow btn btn-outline-secondary mr-4">
+              International
+          </button>
+      </div>
+      <div class="col-6 col-md-3">
+          <button (click)="getMschoolData()" type="button" class="button-shadow blueBtn btn btn-outline-secondary mr-4">
+              Multinational
+          </button>
+      </div>
+      <div class="col-6 col-md-3">
+          <button (click)="getEschoolData()" type="button" class="button-shadow greenBtn btn btn-outline-secondary mr-4">
+              Experimental 
+          </button>
+      </div>
+      <div class="col-6 col-md-3">
+          <button (click)="getPschoolData()" type="button" class="button-shadow orangeBtn btn btn-outline-secondary mr-4">
+              Public
+          </button>
+      </div>
+    </div>  
+  </div>  
+  <div class="text-right">
+    <div class="btn-group mb-5 dropDownData mr-auto ml-auto">
+        <button type="button" id="myText" class="inputBtn btn btn-primary left">Choose Stage</button>
+        <div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
+          <button class="btn btn-primary dropdown-toggle-split right" ngbDropdownToggle></button>
+          <div class="dropdown-menu" ngbDropdownMenu style="right:0px ;left:auto">
+            <button class="dropdown-item" (click)="stage('All')">All Schools</button>
+            <button class="dropdown-item" (click)="stage('Primary')">Primary Schools</button>
+            <button class="dropdown-item" (click)="stage('Preparatory')">Preparatory Schools</button>
+            <button class="dropdown-item" (click)="stage('High')">High Schools </button>
+          </div>
+        </div>
+      </div>
+  </div>
+  <ngb-carousel class="margin" data-interval="false">
+      <ng-template ngbSlide>
+        <div class="card-columns" >
+          <div class="card mb-5" *ngFor="let data of schoolData">
+            <div class="cardImg">
+                <div class="hover">
+                  <div>
+                    <p>{{data.description}}</p>
+                    <button class="button-shadow"><a href="{{data.link}}" target="_blank">Website</a></button>
+                  </div>
+                </div>
+                <img class="card-img-top" src="{{data.img}}" alt="Card image cap">
+            </div> 
+            <div class="card-body pl-0">
+              <h5 class="card-title">{{data.name}}</h5>
+              <p class="card-text">{{data.location}} </p>
+            </div>
+          </div> 
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="card-columns" >
+          <div class="card mb-5" *ngFor="let data of schoolData">
+            <div class="cardImg">
+                <div class="hover">
+                  <div>
+                    <p>{{data.description}}</p>
+                    <button class="button-shadow"><a href="{{data.link}}" target="_blank">Website</a></button>
+                  </div>
+                </div>
+                <img class="card-img-top" src="{{data.img}}" alt="Card image cap">
+            </div> 
+            <div class="card-body pl-0">
+              <h5 class="card-title">{{data.name}}</h5>
+              <p class="card-text">{{data.location}} </p>
+            </div>
+          </div> 
+        </div>
+      </ng-template>
+    </ngb-carousel>
+</div>

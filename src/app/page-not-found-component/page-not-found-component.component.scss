@@ -1,0 +1,28 @@
+@import "../../assets/variables.scss";
+.error{
+    width: 100%;
+    height: 565px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    img{
+        width: 170px;
+        margin-bottom: 1rem;
+    }
+    p{
+        color: $pink;
+        font-family: 'Chewy';
+        font-size: 40px;
+    }
+    a{
+        color: $blue;
+        font-size: 20px;
+        font-family: 'Chewy';
+    }
+    a:hover{
+        color: $pink;
+        text-underline-position: below;
+        transition: all 0.3s ease-in-out;
+    }
+}

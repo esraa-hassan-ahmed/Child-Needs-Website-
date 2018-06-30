@@ -1,0 +1,163 @@
+.splash{
+    background-image: url('/assets/images/games/splaash-01.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+  
+  }
+  
+  .choose{
+  background-color: #8c5a87;
+  border-radius: 20px;
+  border: 3px solid white;
+    width: 350px;
+    height: 70px;
+    position: absolute;
+    bottom: 70px;
+    color: white;
+    font-size: 28px;
+  
+  }
+  .boy{
+    width: 350px;
+    height: 40px;
+    position: absolute;
+    bottom: 20px;
+    color: white;
+    font-size: 25px;
+  }
+  
+  .bg{
+    background-image: url('/assets/images/games/egypt2-01.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    display: none;
+  }
+  
+  .character{
+    width: 250px;
+    height: 400px;
+    position: absolute;
+    right: 30vw;
+    bottom: 0px;
+    animation-name: example;
+    animation-duration: 2s;  
+  }
+  
+  @keyframes example  {
+   from  { right: 0px;}
+    to {  right: 30vw; }
+  }
+  
+  
+  .question{
+    width: 400px;
+    height: 70px;
+    background-color: black;
+    border-radius: 25px;
+    position: absolute;
+    left: 20px;
+    bottom: 50px;
+    color: white;
+    font-size: 30px;
+  
+  
+  }
+  .one{
+    background-color: white;
+    color: tomato;
+    position: absolute;
+    left: 70px;
+    bottom: 20px;
+    border-radius: 15px;
+    font-size:24px;
+    padding-bottom: 5px;
+    width: 150px;
+  
+  }
+  .one:hover , .two:hover{
+    background-color: tomato;
+    color: white
+  }
+  
+  .two{
+    background-color: white;
+    color: tomato;
+    position: absolute;
+    left: 230px;
+    padding-bottom: 5px;
+    bottom: 20px;
+    border-radius: 15px;
+    font-size:24px;
+    width: 150px;
+  
+  }
+  
+  button:focus{
+    outline:none;
+  }
+  
+  .end {
+    background-image: url('/assets/images/games/end2-01.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: none;
+    color: #bc5700;
+    font-size: 38px;
+    font-weight: bold;
+  }
+  .end a{
+    background-color:#8c5a87 ;
+    color: white;
+    font-size: 22px;
+    padding: 10px 20px;
+    border-radius: 15px;
+  
+  }
+  .end a:hover{
+    color: white;
+  
+  }
+  
+  .win , .lose{
+    display: none;
+  }
+  
+  .lose{
+    font-size: 45px;
+  }
+  
+  
+  @media (max-width:450px)
+  {
+    .question{
+      width: 300px;
+      font-size: 25px;
+      left: 0px;
+    }
+    .one{
+      left: 20px;
+      width:110px;
+    }
+    .two{
+      left: 170px;
+      width:110px;
+  
+    }
+    .choose , .boy{
+      width: 300px;
+    }
+  
+  }
+  
+
+//   .characterBoy , .characterGirl{
+//       display: none;
+//   }

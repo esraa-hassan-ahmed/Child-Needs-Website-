@@ -1,0 +1,17 @@
+[
+    {
+        "img":"assets/images/home/event.svg",
+        "head":"Alexandria Bibliotheca",
+        "par":"write a short story and illustrate its events, as well as read it out in a storytelling event."
+    },
+    {
+        "img":"assets/images/home/calendar.svg",
+        "head":"Alexandria Center of Arts",
+        "par":"help children conduct scientific and architectural experiments, acquainting them with technology."
+    },
+    {
+        "img":"assets/images/home/events3.svg",
+        "head":"Palace of Culture",
+        "par":"Students from Alex schools will participate in the competition by presenting research on wildlife." 
+    }
+]

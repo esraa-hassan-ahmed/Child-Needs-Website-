@@ -1,0 +1,27 @@
+<section class=" container-fluid home-contact">
+  <h2 class="text-center mb-5">Contact Us</h2>
+  <div class="row justify-content-center w-100">
+    <div class="col-lg-5 col-md-7">
+      <form  name="contactForm" #contactForm ="ngForm" novalidate (ngSubmit)="contactUs(contactForm)">
+        <div class="form-group">
+          <input class="form-control w-100 inputForm" type="text" placeholder="Name" name="user_name" [(ngModel)]="user_name" required> 
+        </div>
+        
+        <div class="form-group">
+              <input type="email " class="form-control w-100 inputForm" id="exampleFormControlInput1" placeholder="Email"  name="user_email" [(ngModel)]="user_email" required>
+        </div>
+        <!-- <div class="alert alert-danger mb-5" role="alert" *ngIf="Email.touched && !Email.valid">
+          Email is required
+        </div>  -->
+        <div class="form-group">
+            <textarea class="form-control textareaForm w-100" id="exampleFormControlTextarea1" rows="6" placeholder="Message..."  name="user_message" [(ngModel)]="user_message" required></textarea>
+        </div>
+        <div class="text-center ">
+          <button type="submit" class="btn button-shadow" [disabled]="!contactForm.valid" routerLink="/">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section> 
+
+

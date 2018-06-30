@@ -1,0 +1,72 @@
+[{
+    "img":"assets/images/events/pic7.jpeg",
+    "place":"Alexandria Center of Arts",
+    "imgDate":"7",
+    "imgMonth":"aug",
+    "name":"The Young Writer Competition",
+    "type":"Art Education",
+    "location":"Al Azaritah WA Ash Shatebi, Qesm Bab Sharqi, Alexandria ",
+    "date":"7 Aug 2018 - 12 Aug 2018",
+    "link":"https://www.facebook.com/pages/Alexandria-Center-Of-Arts/205248126198695",
+    "description":"write a short story and illustrate its events, as well as read it out in a storytelling event"
+},
+{
+    "img":"assets/images/events/pic8.jpeg",
+    "place":"Alexandria Center of Arts",
+    "imgDate":"11",
+    "imgMonth":"oct",
+    "name":"The Basics of Building and Robots",
+    "type":"Edutainment and Science",
+    "location":"Al Azaritah WA Ash Shatebi, Qesm Bab Sharqi, Alexandria ",
+    "date":"11 Oct 2018 - 15 Oct 2018",
+    "link":"https://www.facebook.com/pages/Alexandria-Center-Of-Arts/205248126198695",
+    "description":"help children conduct scientific and architectural experiments, acquainting them with robotics."
+},
+{
+    "img":"assets/images/events/pic9.jpeg",
+    "place":"Alexandria Center of Arts",
+    "imgDate":"5",
+    "imgMonth":"sep",
+    "name":"World Wildlife Day",
+    "type":"Environment and Development",
+    "location":"1 El-Horeya Rd, Al Attarin Sharq, Qesm Al Attarin, Alexandria",
+    "date":"5 Sep 2018 - 10 Sep 2018",
+    "link":"https://www.facebook.com/pages/Alexandria-Center-Of-Arts/205248126198695",
+    "description":"Students from Alex will participate in the competition by presenting research on wildlife."
+},
+{
+    "img":"assets/images/events/pic7.jpeg",
+    "place":"Alexandria Center of Arts",
+    "imgDate":"7",
+    "imgMonth":"aug",
+    "name":"The Young Writer Competition",
+    "type":"Art Education",
+    "location":"Al Azaritah WA Ash Shatebi, Qesm Bab Sharqi, Alexandria",
+    "date":"7 Aug 2018 - 12 Aug 2018",
+    "link":"https://www.facebook.com/pages/Alexandria-Center-Of-Arts/205248126198695",
+    "description":"write a short story and illustrate its events, as well as read it out in a storytelling event."
+},
+{
+    "img":"assets/images/events/pic8.jpeg",
+    "place":"Alexandria Center of Arts",
+    "imgDate":"11",
+    "imgMonth":"oct",
+    "name":"The Basics of Building and Robots",
+    "type":"Edutainment and Science",
+    "location":"Al Azaritah WA Ash Shatebi, Qesm Bab Sharqi, Alexandria ",
+    "date":"11 Oct 2018 - 15 Oct 2018",
+    "link":"https://www.facebook.com/pages/Alexandria-Center-Of-Arts/205248126198695",
+    "description":"help children conduct scientific and architectural experiments, acquainting them with robotics."
+},
+{
+    "img":"assets/images/events/pic9.jpeg",
+    "place":"Alexandria Center of Arts",
+    "imgDate":"5",
+    "imgMonth":"sep",
+    "name":"World Wildlife Day",
+    "type":"Environment and Development",
+    "location":"1 El-Horeya Rd, Al Attarin Sharq, Qesm Al Attarin, Alexandria",
+    "date":"5 Sep 2018 - 10 Sep 2018",
+    "link":"https://www.facebook.com/pages/Alexandria-Center-Of-Arts/205248126198695",
+    "description":"Students from alex will participate in the competition by research on wildlife."
+}]

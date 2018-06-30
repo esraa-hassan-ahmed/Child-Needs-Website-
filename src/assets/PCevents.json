@@ -1,0 +1,72 @@
+[{
+    "img":"assets/images/events/pic10.jpeg",
+    "place":"Palace of Culture",
+    "imgDate":"7",
+    "imgMonth":"aug",
+    "name":"The Young Writer Competition",
+    "type":"Art Education",
+    "location":"Al Azaritah WA Ash Shatebi, Qesm Bab Sharqi, Alexandria ",
+    "date":"7 Aug 2018 - 12 Aug 2018",
+    "link":"http://www.alexandria.gov.eg/services/tourism/alextourism/culture/%D9%85%D8%B1%D9%83%D8%B2-%D8%A7%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9-%D9%84%D9%84%D8%A7%D8%A8%D8%AF%D8%A7%D8%B9.html",
+    "description":"write a short story and illustrate its events, as well as read it out in a storytelling event"
+},
+{
+    "img":"assets/images/events/pic11.jpeg",
+    "place":"Palace of Culture",
+    "imgDate":"11",
+    "imgMonth":"oct",
+    "name":"The Basics of Building and Robots",
+    "type":"Edutainment and Science",
+    "location":"Al Azaritah WA Ash Shatebi, Qesm Bab Sharqi, Alexandria ",
+    "date":"11 Oct 2018 - 15 Oct 2018",
+    "link":"http://www.alexandria.gov.eg/services/tourism/alextourism/culture/%D9%85%D8%B1%D9%83%D8%B2-%D8%A7%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9-%D9%84%D9%84%D8%A7%D8%A8%D8%AF%D8%A7%D8%B9.html",
+    "description":"help children conduct scientific and architectural experiments, acquainting them with robotics."
+},
+{
+    "img":"assets/images/events/pic12.jpeg",
+    "place":"Palace of Culture",
+    "imgDate":"5",
+    "imgMonth":"sep",
+    "name":"World Wildlife Day",
+    "type":"Environment and Development",
+    "location":"1 El-Horeya Rd, Al Attarin Sharq, Qesm Al Attarin, Alexandria",
+    "date":"5 Sep 2018 - 10 Sep 2018",
+    "link":"http://www.alexandria.gov.eg/services/tourism/alextourism/culture/%D9%85%D8%B1%D9%83%D8%B2-%D8%A7%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9-%D9%84%D9%84%D8%A7%D8%A8%D8%AF%D8%A7%D8%B9.html",
+    "description":"Students from Alex will participate in the competition by presenting research on wildlife."
+},
+{
+    "img":"assets/images/events/pic10.jpeg",
+    "place":"Palace of Culture",
+    "imgDate":"7",
+    "imgMonth":"aug",
+    "name":"The Young Writer Competition",
+    "type":"Art Education",
+    "location":"Al Azaritah WA Ash Shatebi, Qesm Bab Sharqi, Alexandria",
+    "date":"7 Aug 2018 - 12 Aug 2018",
+    "link":"http://www.alexandria.gov.eg/services/tourism/alextourism/culture/%D9%85%D8%B1%D9%83%D8%B2-%D8%A7%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9-%D9%84%D9%84%D8%A7%D8%A8%D8%AF%D8%A7%D8%B9.html",
+    "description":"write a short story and illustrate its events, as well as read it out in a storytelling event."
+},
+{
+    "img":"assets/images/events/pic11.jpeg",
+    "place":"Palace of Culture",
+    "imgDate":"11",
+    "imgMonth":"oct",
+    "name":"The Basics of Building and Robots",
+    "type":"Edutainment and Science",
+    "location":"Al Azaritah WA Ash Shatebi, Qesm Bab Sharqi, Alexandria ",
+    "date":"11 Oct 2018 - 15 Oct 2018",
+    "link":"http://www.alexandria.gov.eg/services/tourism/alextourism/culture/%D9%85%D8%B1%D9%83%D8%B2-%D8%A7%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9-%D9%84%D9%84%D8%A7%D8%A8%D8%AF%D8%A7%D8%B9.html",
+    "description":"help children conduct scientific and architectural experiments, acquainting them with robotics."
+},
+{
+    "img":"assets/images/events/pic12.jpeg",
+    "place":"Palace of Culture",
+    "imgDate":"5",
+    "imgMonth":"sep",
+    "name":"World Wildlife Day",
+    "type":"Environment and Development",
+    "location":"1 El-Horeya Rd, Al Attarin Sharq, Qesm Al Attarin, Alexandria",
+    "date":"5 Sep 2018 - 10 Sep 2018",
+    "link":"http://www.alexandria.gov.eg/services/tourism/alextourism/culture/%D9%85%D8%B1%D9%83%D8%B2-%D8%A7%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9-%D9%84%D9%84%D8%A7%D8%A8%D8%AF%D8%A7%D8%B9.html",
+    "description":"Students from alex will participate in the competition by research on wildlife."
+}]

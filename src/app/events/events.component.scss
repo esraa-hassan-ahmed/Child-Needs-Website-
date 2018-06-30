@@ -1,0 +1,160 @@
+@import "../../assets/variables.scss";
+.secshop{
+    background-image: url('/assets/images/events/header.jpeg');
+    background-position: top; 
+}
+
+ngb-tabset /deep/ ul {
+    margin-bottom: 80px;
+    font-size: 18px;
+    font-family: 'Nunito'
+}
+ngb-tabset /deep/ .nav-tabs .nav-link{
+    color:$blue;
+}
+ngb-tabset /deep/ .nav-tabs .nav-link.active{
+    color:$pink;
+}
+.card{
+    height: 550px;
+    .cardImg{
+        .hover{
+            display: inline-block;
+            right: 0;
+            margin-top: 20px;
+            margin-right: 20px;
+            background-color: #555555;  
+            text-align: center;
+            height: 70px;
+            width: 50px;
+            transition-timing-function: ease-in;
+            transition: margin 1s;
+            div{
+                padding: 10px;
+            }
+            p{               
+                margin-bottom: 0;
+            }           
+        }
+        .allDiv{
+            position: absolute;
+            display: flex;
+            align-items: flex-end;
+            width: 100%;
+            height: 100%;
+            .hover2{
+                color: white;              
+                width: 100%; 
+                background-color: #555555;  
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                padding-left: 18px;
+                padding-top: 12px;        
+            }
+        }
+    }
+    .cardImg:hover{
+        .hover{
+            margin-top: 60px;
+            transition-timing-function: ease-in;
+            transition: margin 1s;
+        }
+    }
+    .card-body{
+        p{
+            color: #696464;
+            font-size: 15px;           
+        }
+        .button-shadow{
+            font-size: 14px;
+        }
+        button{
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }     
+    }
+}
+@media all and (max-width:991px){
+    .card{
+        .cardImg{
+            .hover{
+                display: none;
+            }
+            .allDiv{
+                .hover2{
+                    p{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .card-body{
+            h5{
+                font-size: 18px;
+            }
+            p{
+                font-size: 14px;           
+            }
+            .button-shadow{
+                font-size: 12px;
+            }
+        }
+    }   
+}
+@media all and (max-width:767px){
+    .card{
+        .cardImg{
+            .hover{
+                display: none;
+            }
+            .allDiv{
+                .hover2{
+                    p{
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        .card-body{
+            h5{
+                font-size: 16px;
+            }
+            p{
+                font-size: 12px;           
+            }
+            .button-shadow{
+                font-size: 10px;
+            }
+        }
+    }   
+}
+@media all and (max-width:575px){
+    .card{
+        height: inherit;
+        .cardImg{
+            .hover{
+                display: none;
+            }
+            .allDiv{
+                .hover2{
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .card-body{
+            h5{
+                font-size: 20px;
+            }
+            p{
+                font-size: 14px;           
+            }
+            .button-shadow{
+                font-size: 16px;
+            }
+        }
+    }   
+}

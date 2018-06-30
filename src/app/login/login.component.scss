@@ -1,0 +1,73 @@
+@import "../../assets/variables.scss";
+
+.imgForm{
+    background-color: #fcedea;
+    height: 600px;
+}
+.form{
+    height: 600px;
+    position: relative;
+    h2{
+        padding-top: 10px;
+    }
+}
+.input-group-text{
+    background-color: $pink;
+    border-radius: 10%;
+    color: white;
+    border: solid 2px $pink;
+}
+.input-group{
+    width: 70%;
+}
+.facebook{
+    background-color: #2e3192;
+    margin-top: 65px;
+}
+.twitter{
+    background-color: #d34836;
+}
+.LoginDiv{
+    position: absolute;
+    bottom: 0px;
+    background-color: #e21c3f;
+    color: white;
+    width: 100%;
+    height: 80px;
+    border-radius: 0px;
+    left: 0px;
+}
+button{
+    border-radius: 10px;
+    color: white;
+}
+img{
+    width: 38%;
+}
+a{
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+}
+.alert{
+    font-size: 12px;
+    margin-bottom: 0px;
+    position: absolute;
+    left: 15%;
+    width: 23%;
+}
+
+@media all and (max-width:992px){
+ 
+.row{
+    .girlImg{
+        display: none;
+    }
+    h2{
+        padding-top: 0px;
+    }
+}
+
+}
+ 

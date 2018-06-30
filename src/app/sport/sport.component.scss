@@ -1,0 +1,60 @@
+@import "../../assets/variables.scss";
+.secshop{
+    background-image:url('/assets/images/sport/header.png');
+}
+.container{
+    .card{
+        height: 480px;
+        padding: 40px;
+        border: dotted 4px black;
+        .card-body{
+            p{
+                font-size: 15px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+    form{
+        i{
+            font-size: 20px;
+        }
+    }
+}
+
+@media all and (max-width:992px){
+    .container{
+        .card{
+            .card-body{
+                h5{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width:768px){
+    .container{
+        .card{
+            padding: 15px;
+            .card-body{
+                h5{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width:576px){
+    .container{
+        .card{
+            padding: 40px;
+            height: initial;
+            .card-body{
+                h5{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}

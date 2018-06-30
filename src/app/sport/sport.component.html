@@ -1,0 +1,62 @@
+<div class="secshop margin">
+  <div class="secBg text-center">
+    <h1>sport</h1>
+    <span><a routerLink="/">HOME</a></span>
+    <span><a class="clicked">SPORT</a></span>
+  </div>
+</div> 
+
+<div class="container">
+  <div class="text-right">
+    <div class="btn-group mb-5 dropDownData mr-auto ml-auto">
+        <button type="button" id="myText" class="inputBtn btn btn-primary left">Choose Sport</button>
+        <div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
+          <button class="btn btn-primary dropdown-toggle-split right" ngbDropdownToggle></button>
+          <div class="dropdown-menu" ngbDropdownMenu style="right:0px ;left:auto">
+            <button class="dropdown-item" (click)="getSportData()">All Places</button>
+            <button class="dropdown-item" (click)="getSwimData()">Swimming</button>
+            <button class="dropdown-item" (click)="getFootballData()">Football</button>
+            <button class="dropdown-item" (click)="getKarateData()">Karat</button>
+            <button class="dropdown-item" (click)="getBalletData()">Ballet</button>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  
+  <ngb-carousel class="margin" data-interval="false">
+    <ng-template ngbSlide>
+      <div class="card-columns" >
+        <div class="card mb-5" *ngFor="let data of sportData">
+          <div class="cardImg">
+              <a href="{{data.link}}"><img class="card-img-top" src="{{data.img}}" alt="Card image cap"></a>
+          </div> 
+          <div class="card-body pl-0">
+            <h5 class="card-title">{{data.name}}</h5>
+            <p class="card-text par">{{data.location}} </p>
+            <p class="card-text par">{{data.discription}} </p>
+          </div>
+        </div> 
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="card-columns" >
+        <div class="card mb-5" *ngFor="let data of sportData">
+          <div class="cardImg">
+              <a href="{{data.link}}"><img class="card-img-top" src="{{data.img}}" alt="Card image cap"></a>
+          </div> 
+          <div class="card-body pl-0">
+            <h5 class="card-title">{{data.name}}</h5>
+            <p class="card-text par">{{data.location}} </p>
+            <p class="card-text par">{{data.discription}} </p>
+          </div>
+        </div> 
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
+
+
+
+
+

@@ -1,0 +1,69 @@
+@import "../../assets/variables.scss";
+.secshop{
+    background-image:url('/assets/images/media/book.jpg');
+    background-position: center;
+}
+.books{   
+    a:hover{
+        color: white;
+    }
+    .main-img{
+        position: relative;
+        overflow: hidden;
+        height: 300px;
+
+        .hover{ 
+            display: flex;
+            align-items:center;
+            justify-content:center;
+            text-align: center;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(black,0.4);
+            opacity: 0; 
+            transition: all 0.3s linear;
+            position: absolute;
+            top:0;
+            left: 0;       
+            color:white;     
+            a{color: white
+            }
+        }
+        .hover:hover{
+            opacity:1;
+            cursor: pointer;
+        }
+        .zoomIcon{
+            border-radius: 50%;
+            background-color: $pink;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            transition: all 0.3s linear;
+
+        }
+        .zoomIcon:hover{
+            background-color: $blue;
+            cursor: pointer;
+        }
+        .zoomBtn{
+            background-color: transparent;
+            border: transparent;
+            color: white;
+        }
+    }
+  
+    .card-body{
+        background-color:$cardBG;
+        .card-text{
+            font-size: 18px;
+            span{
+                font-family: NunitoLight;
+            }   
+        }
+
+    }
+  
+
+}
+

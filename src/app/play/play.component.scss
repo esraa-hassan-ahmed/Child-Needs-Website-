@@ -1,0 +1,27 @@
+@import "../../assets/variables.scss";
+
+.container{
+    margin-top: 140px;
+    .card-deck{
+        margin-bottom: 140px;
+        img{
+            height: 240px;
+            // transition: .3s ease-in-out;
+        }
+        // .card:hover img{
+        //     transform: rotate(-15deg) scale(1);
+        // }
+        .card-body{
+            background-color: #f7f7f7;
+            h5{
+                padding: 3px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+        .cover{
+            position: relative;
+        }
+    }
+}

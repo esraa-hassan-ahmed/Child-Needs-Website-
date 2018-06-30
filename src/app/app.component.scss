@@ -1,0 +1,287 @@
+@import "../assets/variables.scss";
+nav{
+    .boy{
+        padding-left: 15px;
+    }
+    .abs{
+        margin-left: 20px;
+    }
+    .none{
+        display: none;
+    }
+    button{
+        height: 30px;
+    }
+    .dropdown-item:hover{
+        background-color: $blue;
+        color: white;
+        cursor: pointer;
+    }
+    .verticalLine{
+        border-right: solid black 1px;
+    }
+    .socailMedia{
+        border-radius: 50%;
+        color: white;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .facebook{
+        background-color: #5977b8;
+    }
+    .twitter{
+        background-color: #74cee4;
+    }
+    .google{
+        background-color: #e16c6c;
+    }
+    .insta{
+        background-color: #e5397f;
+    }
+    .register{
+        background-color:$blue;
+        border: $blue solid 2px;
+        border-radius: 10px;
+        color: white;
+    }
+    .register:focus{
+        border-color: none;
+        box-shadow: none;
+    }
+    .fa:focus{
+        outline: none;
+    }
+}
+
+.secondNav{
+    background-color: $pink;
+    color: white;
+    .container{
+        position: relative;
+        .navbar-toggler{
+            margin-right: 85px;
+            .menu{
+                color: white;
+                font-size: 18px;
+            }
+        }
+        .collapse{
+            .navbar-nav{
+                .btn{
+                    height: initial;
+                    border: none;
+                    color: white;
+                    font-family: Chewy;
+                    letter-spacing: 1px;
+                }
+                .dropdown-toggle:after{
+                    display: none;
+                }
+                .btn:hover{
+                    background: transparent;
+                    border: none;
+                }
+                .btn:focus{
+                    background: transparent;
+                    border: none;
+                    box-shadow: none;
+                }
+                .btn:active{
+                    background-color: transparent;
+                }
+            }
+        }
+        a{
+            color: white;
+        }
+        a:hover{
+            color: white;
+        }
+        .navbar-toggler-icon{
+            i{
+                color: white;
+            }
+        }
+        .navbar-toggler{
+            border-color: white;
+        }
+        .pointer{
+            cursor: pointer;
+        }
+        .cart{
+            font-size: 12px;
+            background-color: white;
+            color:$pink;
+            border-radius: 50%;
+            cursor: pointer;
+            display: inline-block;
+            padding: 0px 6px;
+            margin-left: 5px;
+        }
+        .divNav{
+            position: absolute;
+            right: 18px;
+            top: 10px;
+        }
+    }
+}
+.navbar-light .navbar-toggler-icon{
+    background-image: none;
+}
+
+// footer
+footer {
+    background-color: #495052;
+    color: white;
+    font-family: 'NunitoLight';
+    font-size: 17px;
+    .usfel{
+        margin-top: 28px;
+    }
+    h4{
+        font-family: 'Nunito';
+    }
+    p{
+     font-family: 'NunitoLight';
+    }
+    .navLi{
+        li{
+            border-bottom: 1px dashed #7d7b7b;
+        }
+    }
+    ul{
+        list-style-type: none;
+        a{
+            color: white;
+        }
+        li{
+            i{
+                transition: all 0.5s ease;
+            }
+
+            .spann{
+                cursor: pointer;
+            }
+        }
+        li:hover{
+            i{
+                transform: rotate(360deg);
+            }
+        }
+    }
+    .mobile{
+        background-color: $blue;
+        i{
+            transition: all 0.5s ease;
+        }
+    }
+    .mobile:hover{
+        i{
+            transform: rotate(360deg);
+        }
+    }
+    .envelope{
+        background-color: $pink;
+        i{
+            transition: all 0.5s ease;
+        }
+    }
+    .envelope:hover{
+        i{
+            transform: rotate(360deg);
+        }
+    }
+    .follow{
+        .socialMedia{
+            width: 35px;
+            height: 35px;
+            i{
+                font-size: 19px;
+            }
+        }
+    }
+
+}
+.footerBottom{
+    background-color: #404547;
+    color: white;
+ p{
+    font-family: 'NunitoLight';
+ }
+}
+
+// media query
+@media (max-width:  768px) {
+    footer{
+        .row{
+            div:nth-child(1) , div:nth-child(2)
+            {
+            margin-bottom: 50px;
+            }
+        }
+    }
+}
+a{
+    color: none;
+    text-decoration: none;
+}
+
+@media all and (max-width:992px){
+    nav{
+        .abs{
+            position: absolute;
+            margin:0px;
+        }
+       .socailMedia,.register,.login{
+           display: none;
+       } 
+       .none{
+           display: inline-block;
+       }
+       .register{
+           margin-right: 10px;
+       }
+       .verticalLine{
+           display: none;
+       }
+       img{
+           display: none;
+       }
+    }
+    footer{
+       a{
+           img{
+               width: 200px;
+           }
+       }
+    }
+}
+
+@media all and (max-width:576px){
+    .none{
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .abs{
+        button{
+            font-size: 13px;
+        }
+    }
+}
+.navIcons{
+position: absolute;
+top: 10px;
+right:15px;
+}
+
+.p{
+    width: 1px;
+    height: 40px;
+}
+
+.b{
+    position: relative;
+}

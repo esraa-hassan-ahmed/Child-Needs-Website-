@@ -1,0 +1,48 @@
+@import "../../assets/variables.scss";
+.shopItem{
+    margin-top: $mai_margin;
+    img{
+        width: 100%;
+    }
+    .redPrice{
+        color: red;
+        font-size: 18px;
+    }
+    .btn-group{
+        .selectBtn{
+            width: 90px;
+        }
+    }
+    .dropdown-item{
+        color: $inputGrey;
+    }
+    .dropdown-item:hover{
+        background-color: $pink;
+        color: white;
+        cursor: pointer;
+    }
+   /deep/ .dropMenu{
+        color: $inputGrey;
+    }
+
+
+
+}
+
+@media all and (max-width:992px){
+    .shopItem{
+        img{
+            width: 60%;
+        }
+        h4{
+            padding-top: 10px;
+        }
+    }
+}
+@media all and (max-width:420px){
+    .shopItem{
+        .top{
+            margin-bottom: 15px;
+        }
+    }
+}

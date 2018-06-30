@@ -1,0 +1,29 @@
+@import "../../assets/variables.scss";
+.secshop{
+    background-image: url('/assets/images/media/videos.jpg');
+    background-position: center; 
+}
+.mediaa{
+    font-family: "Nunito";
+    .cardImg{
+        height: 250px;
+        iframe{
+            height: 250px;
+        }
+    }
+  
+    .time{
+        background-color: $pink;
+        position: absolute;
+        top: 0px;
+        right:0px;
+        padding: 10px;
+        color: white;
+    }
+    span{
+        font-family: 'NunitoLight'
+    }
+    .card-body{
+        background-color:$cardBG;
+    }
+}

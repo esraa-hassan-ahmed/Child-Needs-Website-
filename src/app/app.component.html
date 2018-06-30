@@ -1,0 +1,129 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container ">
+      <a href="#"><img src="../assets/images/logo9-01.png" class="none" routerLink="/" /></a> 
+      <a href="#"><img src="../assets/images/logo9-01.png" routerLink="/" /></a> 
+
+      <div>
+          <button (click)="redirectToRegister()" type="button" class="btn text-center register  pt-0 pb-0 none">Register</button>
+          <button (click)="redirectToLogin()" type="button" class="btn text-center login dropMenu pt-0 pb-0 none">Login</button>
+      </div>
+   
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup" [ngbCollapse]="navbarCollapsed">
+        <div class="navbar-nav d-flex align-items-center justify-content-center">
+         <a href="https://www.facebook.com/"><span class="facebook socailMedia ml-2"><i class="fa fa-facebook-f"></i></span></a>
+         <a href="https://www.twitter.com/"><span class="twitter socailMedia ml-2"><i class="fa fa-twitter"></i></span></a>
+         <a href="https://www.google.com/"><span class="google socailMedia ml-2"><i class="fa fa-google-plus"></i></span></a>
+         <a href="https://www.instagram.com/"><span class="insta socailMedia ml-2"><i class="fa fa-instagram"></i></span></a>
+         <button (click)="redirectToRegister()" type="button" class="btn text-center register mr-2 ml-5 pt-0 pb-0">Register</button>
+         <button (click)="redirectToLogin()" type="button" class="btn text-center login dropMenu pt-0 pb-0">Login</button>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<nav class="navbar navbar-expand-lg navbar-light pl-0 pr-0 secondNav">
+  <div class="container d-flex  justify-content-between b ">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" (click)="navbarCollapsed = !navbarCollapsed">
+        <i class="fa fa-bars menu"></i>
+    </button>
+  <div class="p">
+  </div>
+    <div class="collapse navbar-collapse justify-content-end mr-5" id="navbarNavAltMarkup" [ngbCollapse]="navbarCollapsed">
+      <div class="navbar-nav mr-auto">
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle routerLink="/">Home</button>
+          </div>
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Places</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button class="dropdown-item" routerLink="schools">School</button>
+              <button class="dropdown-item" routerLink="nursery">nursery</button>
+              <button class="dropdown-item" routerLink="resturants">Resturant</button>
+              <button class="dropdown-item" routerLink="sport">Sport</button>
+              <button class="dropdown-item" routerLink="doctors">Doctor</button>
+            </div>
+          </div>
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle  routerLink="events">Events</button>
+          </div>
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Media</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button class="dropdown-item" routerLink="mediavideos">Videos</button>
+              <button class="dropdown-item" routerLink="mediabooks">Books</button>
+            </div>
+          </div>
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Shop</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button class="dropdown-item clothesBtn" routerLink="shop">Clothes</button>
+              <button class="dropdown-item toyBtn" routerLink="toys">Toys</button>
+            </div>
+          </div>
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Games</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button class="dropdown-item" routerLink="/play">All Games</button>
+              <a href="https://esraanabil.github.io/numbers-game-for-kids/game">  <button class="dropdown-item">Easy Numbers</button></a>
+              <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fesraa-hassan-ahmed.github.io%2FSimple-Animal-Game%2Findex.html&h=ATMA3YVCbhYaNvTdyIwKeMznQsAHeFi5nm5yTL1mrFIgnyMJvsRmicKx1nLhj9Tofg-WXqAfAzk2r4eowBkUhD2b6ve1bIyrjZsleEFiE_TGZFP_bo4NBw"> <button class="dropdown-item">Lovely Animals</button></a>
+              <button class="dropdown-item" routerLink="games">World Discovery</button>
+            </div>
+          </div>
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle routerLink="babyTracker">Baby Care</button>
+          </div>
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle routerLink="/contact" (click)="reload()">Contact Us</button>
+          </div>
+      </div>
+    </div>
+    <div class="divNav">
+      <i class="fa fa-heart pointer" routerLink="WishList" ></i>
+      <i class="fa fa-shopping-cart pl-3 pointer" routerLink="/cart"></i>
+      <span class="cart" *ngIf="cardItemsQuantities > 0"  routerLink="cart">
+        {{cardItemsQuantities}}
+      </span>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet> 
+
+
+<footer class=" mr-0 ml-0   pt-5 pb-5">
+  <div class="container">
+  <div class="row" >
+    <div class="col-md-4  ">
+     <a href="#" ><img src="../assets/images/logofooter-01.png" class="pb-3" /></a> 
+     <p>This web app provide you with all you need to know for your child ( food , sports academy  , education and restaurant ) , and you can shop with us .</p>
+     <p class="d-flex"><span class="mr-3 socialMedia mobile d-flex align-items-center justify-content-center "><i class="fa fa-phone"></i></span>01235665954</p>
+     <p class="d-flex"><span class="mr-3 socialMedia envelope d-flex align-items-center justify-content-center "><i class="fa fa-envelope"></i></span>Example@gmail.com</p>
+    </div>
+    <div class="col-md-4  usfel ">
+      <h4>Usfel Links</h4>
+      <hr class="ml-0">
+      <ul class="pl-0 navLi">
+        <li class="mb-2 pt-1"><a routerLink="/shop" > Shop</a></li>
+        <li class="mb-2 pt-1" ><a routerLink="/media" > Media</a></li>
+        <li class="mb-2 pt-1"><a routerLink="/events" > Events</a></li>
+        <li class="mb-2 pt-1"><a routerLink="/games" > Game</a></li>
+        <li class="mb-2 pt-1"><a routerLink="/babyTracker" > Baby Tracker</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4  usfel follow pl-4">
+      <h4>Follow Us</h4>
+      <hr class="ml-0">
+      <ul class="pl-0 ">
+        <li class="d-flex" ><a href="https://www.facebook.com/" class="socialMedia facebook d-flex align-items-center justify-content-center mr-3 mb-3" ><i class="fa fa-facebook-f "></i></a><span class="pt-1 spann">Facebook</span></li>
+        <li class="d-flex" ><a href="https://www.twitter.com/" class="socialMedia twitter d-flex align-items-center justify-content-center mr-3 mb-3 " ><i class="fa fa-twitter"></i></a> <span class="pt-1 spann">Twitter</span></li>
+        <li class="d-flex" ><a href="https://www.google.com/" class="socialMedia google  d-flex align-items-center justify-content-center mr-3 mb-3" ><i class="fa fa-google-plus "></i></a> <span class="pt-1 spann">Google Plus</span></li>
+        <li class="d-flex" ><a href="https://www.instagram.com/" class="socialMedia instgram d-flex align-items-center justify-content-center mr-3" ><i class="fa fa-instagram"></i></a> <span class="pt-1 spann">Instagram</span> </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</footer>
+<div class="footerBottom col-12 text-center pt-3 pb-3 pl-0 pr-0"><p class="mb-0">copyright 	&copy; 2018 . All rights reserved.</p></div>
+
+
+

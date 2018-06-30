@@ -1,0 +1,43 @@
+[{
+ "img":"assets/images/school/school10.PNG",
+ "name":"Mohamed Zahran Experimental School",
+ "location":"Victor Emanuel Sq. Semouha, Alexandria, Egypt",
+ "description":"delivers an outstanding best education in Alex",
+ "link":"http://www.worldschoollist.com/primary/106024/mohamed-zahran-experimental-school-alexandria"
+},
+{
+ "img":"assets/images/school/school11.jpg",
+ "name":"Toshka Experimental Language school",
+ "location":"Mahatet El Raml Square, Alexandria, Egypt",
+ "description":"delivers an outstanding best education in Alex",
+ "link":"https://www.facebook.com/ToshkaExperimentalLanguageSchool/"
+},
+{
+    "img":"assets/images/school/school11.jpg",
+    "name":"Toshka Experimental Language school",
+    "location":"Mahatet El Raml Square, Alexandria, Egypt",
+    "description":"delivers an outstanding best education in Alex",
+    "link":"https://www.facebook.com/ToshkaExperimentalLanguageSchool/"
+},
+{
+    "img":"assets/images/school/school10.PNG",
+    "name":"Mohamed Zahran Experimental School",
+    "location":"Victor Emanuel Sq. Semouha, Alexandria, Egypt",
+    "description":"delivers an outstanding best education in Alex",
+    "link":"http://www.worldschoollist.com/primary/106024/mohamed-zahran-experimental-school-alexandria"
+},
+{
+    "img":"assets/images/school/school10.PNG",
+    "name":"Mohamed Zahran Experimental School",
+    "location":"Victor Emanuel Sq. Semouha, Alexandria, Egypt",
+    "description":"delivers an outstanding best education in Alex",
+    "link":"http://www.worldschoollist.com/primary/106024/mohamed-zahran-experimental-school-alexandria"
+},
+{
+    "img":"assets/images/school/school11.jpg",
+    "name":"Toshka Experimental Language school",
+    "location":"Mahatet El Raml Square, Alexandria, Egypt",
+    "description":"delivers an outstanding best education in Alex",
+    "link":"https://www.facebook.com/ToshkaExperimentalLanguageSchool/"
+}
+]

@@ -1,0 +1,42 @@
+<div class="container-fluid">
+  <div class="row pr-0">
+    <div class="col-lg-6 girlImg pl-0 pr-0">
+        <div class="imgForm d-flex align-items-center justify-content-center"> <img src="../assets/images/loginRegsiter/sign.png"/> </div>
+    </div>
+    <div class="text-center form col-lg-6 pl-0 pr-0">
+      <h2 class="mt-5 pt-5">Register</h2>
+      <form name="RegisterForm" #RegisterForm="ngForm" (ngSubmit)="RegisterSubmit(RegisterForm)" novalidate>
+      <div class="input-group mt-5 pt-2 ml-auto mr-auto">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Email</span>
+          </div>
+          <input type="text" class="form-control inputForm"  aria-label="Username" aria-describedby="basic-addon1" ngModel name="email" #email="ngModel" required>
+        </div>
+        <div class="alert alert-danger" role="alert" *ngIf="email.touched && !email.valid">
+          Email is required
+        </div> 
+        <div class="input-group ml-auto mr-auto pt-5">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Password</span>
+          </div>
+          <input type="text" class="form-control inputForm"  aria-label="Username" aria-describedby="basic-addon1" ngModel name="password" #password="ngModel" required validateEqual="ConfirmPassword" reverse="true">
+        </div>
+        <div class="alert alert-danger" role="alert" *ngIf="password.touched && !password.valid">
+          Password is required
+        </div> 
+        <div class="input-group ml-auto mr-auto pt-5">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Confirm Password</span>
+          </div>
+          <input type="text" class="form-control inputForm"  aria-label="Username" aria-describedby="basic-addon1" ngModel name="ConfirmPassword" #ConfirmPassword="ngModel" required validateEqual="password">
+        </div>
+        <div class="alert alert-danger mb-5" role="alert" *ngIf="ConfirmPassword.touched && !ConfirmPassword.valid">
+          Password mismatch
+        </div>
+      <button class="btn LoginDiv"  [disabled]="!RegisterForm.valid" type="submit" routerLink="/">Register</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+

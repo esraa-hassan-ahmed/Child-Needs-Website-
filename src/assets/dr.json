@@ -1,0 +1,31 @@
+[
+    {
+       "drImg":"../assets/images/doctors/MohamedTaha.jpeg",
+      "name":"Mohamed Taha",
+      "drSpecialization":"Consultant Psychiatrist",
+      "address":"20 st , Glim Alexandria",
+      "number":"01123631003",
+      "facebook":"https://www.facebook.com/mohamedtaha.net/?ref=br_rs",
+      "gmail":"http://www.gmail.com",
+      "skype":"mohamedtaha60@outlook.com"
+    },
+    { "drImg":"../assets/images/doctors/MohameEmad.jpeg",
+      "name":"Mohamed Emad",
+      "drSpecialization":"Dentist",
+      "address":"60 st , Smoha Alexandria",
+      "number":"01227406511",
+      "facebook":"https://www.facebook.com/Dr.MohamedEmaad/?ref=br_rs",
+      "gmail":"http://www.gmail.com",
+      "skype":"mohamedEmad2@outlook.com"
+    },
+    {
+      "drImg":"../assets/images/doctors/amr.jpg",
+      "name":"Amr Mahmoud",
+      "drSpecialization":"Women and Obstetrics",
+      "address":"50 st , victoria Alexandria",
+      "number":"0120035411",
+      "facebook":"https://www.facebook.com/Women.Health.ACOGA.1/?ref=br_rs",
+      "gmail":"http://www.gmail.com",
+      "skype":"amrmahmoud82@outlook.com"
+    }
+  ]

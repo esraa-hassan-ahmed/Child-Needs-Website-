@@ -1,0 +1,64 @@
+<div class="secshop margin">
+    <div class="secBg text-center">
+      <h1>Shopping Cart</h1>
+      <span><a routerLink="/">HOME</a></span>
+      <span><a class="clicked">SHOPPING CART</a></span>
+    </div>
+  </div> 
+
+<section class="container view-cart mb-5">
+  <div class="row">
+    <div class="col-12 table-responsive mb-3 ">
+        <table class="table">
+            <thead class="">
+              <tr>
+                <th scope="col" >Product</th>
+                <th scope="col" class="pl-0">Price</th>
+                <th scope="col" class="pl-0">Quantity</th>
+                <th scope="col" class="pl-0">Subtotal</th>
+                <th scope="col" class="pl-0">Remove</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor= "let data of newData;let i = index">
+                <th scope="row" class="cart-img pl-0 pr-3">
+                  <img class="card-img-top img-fluid " src="{{data.pic}}">
+                  <div class="text-center " >
+                    <p class="  about-item mb-0 mt-2">{{data.name}}</p>
+                    <p class=" about-item">
+                      <span>{{data.color}}</span>
+                    </p>
+                  </div>
+                </th>
+                <td > <span class="price pr-2" >{{data.price}}</span>LE</td>
+                <td>
+                  <nav class="item-nav" aria-label="...">
+                    <ul class="pagination">
+                      <li class="page-item disabled minus" (click)="minus(i,data.quantity) ">
+                        <a class="page-link background" tabindex="-1"><i class="fa fa-minus"></i></a>
+                      </li>
+                      <li class="page-item"><a class="page-link quantity a" id="any">{{data.quantity}}</a></li>
+                      <li class="page-item plus" (click)="plus(i,data.quantity)">
+                        <a class="page-link background"><i class="fa fa-plus"></i></a>
+                      </li>
+                    </ul>
+                  </nav>
+                </td>
+                <td class="text-dark total itemTotal" >{{data.subtotal}}</td>
+                <td class="delete"><a (click)="delete(data.id)"><i class="fa fa-trash"></i></a></td>
+              </tr>
+            </tbody>
+        </table>
+          
+    </div>
+
+
+    <div class="col-12">
+      <p class="subtotal">Total Price : <span id="totalPrice"> </span> </p>
+      <button class="button-shadow mr-2 mb-3" routerLink="/shop">Continue Shopping</button>
+      <button class="button-shadow">Check Out</button>
+    </div>
+    
+  </div>
+</section>
+
