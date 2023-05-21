@@ -1,0 +1,72 @@
+[{
+    "img":"assets/images/events/pic4.jpeg",
+    "place":"Alexandria Bibliotheca",
+    "imgDate":"7",
+    "imgMonth":"aug",
+    "name":"The Young Writer Competition",
+    "type":"Art Education",
+    "location":"Al Azaritah WA Ash Shatebi, Qesm Bab Sharqi, Alexandria ",
+    "date":"7 Aug 2018 - 12 Aug 2018",
+    "link":"https://www.bibalex.org/en/default",
+    "description":"write a short story and illustrate its events, as well as read it out in a storytelling event"
+},
+{
+    "img":"assets/images/events/pic5.jpeg",
+    "place":"Alexandria Bibliotheca",
+    "imgDate":"11",
+    "imgMonth":"oct",
+    "name":"The Basics of Building and Robots",
+    "type":"Edutainment and Science",
+    "location":"Al Azaritah WA Ash Shatebi, Qesm Bab Sharqi, Alexandria ",
+    "date":"11 Oct 2018 - 15 Oct 2018",
+    "link":"https://www.bibalex.org/en/default",
+    "description":"help children conduct scientific and architectural experiments, acquainting them with robotics."
+},
+{
+    "img":"assets/images/events/pic6.jpeg",
+    "place":"Alexandria Bibliotheca",
+    "imgDate":"5",
+    "imgMonth":"sep",
+    "name":"World Wildlife Day",
+    "type":"Environment and Development",
+    "location":"1 El-Horeya Rd, Al Attarin Sharq, Qesm Al Attarin, Alexandria",
+    "date":"5 Sep 2018 - 10 Sep 2018",
+    "link":"https://www.bibalex.org/en/default",
+    "description":"Students from Alex will participate in the competition by presenting research on wildlife."
+},
+{
+    "img":"assets/images/events/pic4.jpeg",
+    "place":"Alexandria Bibliotheca",
+    "imgDate":"7",
+    "imgMonth":"aug",
+    "name":"The Young Writer Competition",
+    "type":"Art Education",
+    "location":"Al Azaritah WA Ash Shatebi, Qesm Bab Sharqi, Alexandria",
+    "date":"7 Aug 2018 - 12 Aug 2018",
+    "link":"https://www.bibalex.org/en/default",
+    "description":"write a short story and illustrate its events, as well as read it out in a storytelling event."
+},
+{
+    "img":"assets/images/events/pic5.jpeg",
+    "place":"Alexandria Bibliotheca",
+    "imgDate":"11",
+    "imgMonth":"oct",
+    "name":"The Basics of Building and Robots",
+    "type":"Edutainment and Science",
+    "location":"Al Azaritah WA Ash Shatebi, Qesm Bab Sharqi, Alexandria ",
+    "date":"11 Oct 2018 - 15 Oct 2018",
+    "link":"https://www.bibalex.org/en/default",
+    "description":"help children conduct scientific and architectural experiments, acquainting them with robotics."
+},
+{
+    "img":"assets/images/events/pic6.jpeg",
+    "place":"Alexandria Bibliotheca",
+    "imgDate":"5",
+    "imgMonth":"sep",
+    "name":"World Wildlife Day",
+    "type":"Environment and Development",
+    "location":"1 El-Horeya Rd, Al Attarin Sharq, Qesm Al Attarin, Alexandria",
+    "date":"5 Sep 2018 - 10 Sep 2018",
+    "link":"https://www.bibalex.org/en/default",
+    "description":"Students from alex will participate in the competition by research on wildlife."
+}]

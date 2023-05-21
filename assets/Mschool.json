@@ -1,0 +1,42 @@
+[{
+ "img":"assets/images/school/school7.jpg",
+ "name":"Brilliance language school",
+ "location":"Eskot, As Soyouf Qebli (Include Izbat Derbanah), Qism El-Montaza, Alexandria Governorate",
+ "description":"BLS delivers an outstanding best International education in Egypt",
+ "link":"http://bls.school/"
+},
+{
+ "img":"assets/images/school/school8.jpg",
+ "name":"Egyptian English Language School",
+ "location":"As Soyouf Qebli (Include Izbat Derbanah), Qism El-Montaza, Alexandria Governorate",
+ "description":"EELS delivers an outstanding best International education in Egypt",
+ "link":"https://www.facebook.com/EELSShcool2016/"
+},
+{
+ "img":"assets/images/school/school9.jpg",
+ "name":"Egyptian American School",
+ "location":"San Stifano, Qesm AR Ramel, Alexandria Governorate",
+ "description":"EMS can provide the best possible education for you not only in Alexandria but also in Egypt",
+ "link":"http://www.easschool.com/"
+},
+{
+"img":"assets/images/school/school7.jpg",
+ "name":"Brilliance language school",
+ "location":"Eskot, As Soyouf Qebli (Include Izbat Derbanah), Qism El-Montaza, Alexandria Governorate",
+ "description":"BLS delivers an outstanding best International education in Egypt",
+ "link":"http://bls.school/"
+},
+{
+ "img":"assets/images/school/school8.jpg",
+ "name":"Egyptian English Language School)",
+ "location":"As Soyouf Qebli (Include Izbat Derbanah), Qism El-Montaza, Alexandria Governorate",
+ "description":"EELS delivers an outstanding best International education in Egypt",
+ "link":"https://www.facebook.com/EELSShcool2016/"
+},
+{
+ "img":"assets/images/school/school9.jpg",
+ "name":"Egyptian American School",
+ "location":"San Stifano, Qesm AR Ramel, Alexandria Governorate",
+ "description":"EMS can provide the best possible education for you not only in Alexandria but also in Egypt.",
+ "link":"http://www.easschool.com/"
+}]

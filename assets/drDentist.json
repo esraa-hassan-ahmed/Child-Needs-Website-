@@ -1,0 +1,38 @@
+[
+  { "drImg":"../assets/images/doctors/MohameEmad.jpeg",
+      "name":"Mohamed Emad",
+      "drSpecialization":"Dentist",
+      "address":"60 st , Smoha Alexandria",
+      "number":"01227406511",
+      "facebook":"https://www.facebook.com/Dr.MohamedEmaad/?ref=br_rs",
+      "gmail":"mohamedEmad240@gmail.com",
+      "skype":"https://www.skype.com/en/"
+    },
+    { "drImg":"../assets/images/doctors/ryadahmed.jpg",
+      "name":"Ryad Ahmed",
+      "drSpecialization":"Dentist",
+      "address":"60 st , gnaklis Alexandria",
+      "number":"01229853511",
+      "facebook":"https://www.facebook.com/Dr.Ryad.Orthodontics/?ref=br_rs",
+      "gmail":"http://www.gmail.com",
+      "skype":"https://www.skype.com/en/"
+    },
+    { "drImg":"../assets/images/doctors/emad.png",
+      "name":"Mohamed Emad",
+      "drSpecialization":"Dentist",
+      "address":"20 st , loran Alexandria",
+      "number":"01062732200",
+      "facebook":"https://www.facebook.com/Dr.Ryad.Orthodontics/?ref=br_rs",
+      "gmail":"http://www.gmail.com",
+      "skype":"https://www.skype.com/en/"
+    },
+    { "drImg":"../assets/images/doctors/elkashab.png",
+      "name":"El Khashab Dental Clinic",
+      "drSpecialization":"Dentist",
+      "address":"29 st , Abu Qir Alexandria",
+      "number":"01062711160",
+      "facebook":"https://www.facebook.com/elkhashabdental/?ref=br_rs",
+      "gmail":"http://www.gmail.com",
+      "skype":"https://www.skype.com/en/"
+    }
+  ]

@@ -1,0 +1,101 @@
+[
+    {
+        "pic":"../assets/images/shop/clothes1.jpg",
+        "name":"Bodysuit",
+        "id":"1",
+        "price":"240.00",
+        "body":"The perfect soft salobit , it is made from conton,it is suitable for baby’s skin , it’s style is very nice and very comfortable and easy to waer. Love the print and the fabric is lightweight. Perfect for summer.",
+        "color":"green",
+        "size":"S",
+        "stoke":"In Stoke",
+        "quantity": 1
+    },
+    {
+        "pic":"../assets/images/shop/clothes2.jpg",
+        "name":"Bodysuit",
+        "id":"2",
+        "price":"100.00",
+        "body":"The perfect soft salobit , it is made from conton,it is suitable for baby’s skin , it’s style is very nice and very comfortable and easy to waer. Love the print and the fabric is lightweight. Perfect for summer.",
+        "color":"red",
+        "size":"S",
+        "stoke":"In Stoke",
+        "quantity": 1
+    },
+    {
+        "pic":"../assets/images/shop/clothes3.jpg",
+        "name":"Bodysuit",
+        "id":"3",
+        "price":"350.00",
+        "body":"The perfect soft salobit , it is made from conton,it is suitable for baby’s skin , it’s style is very nice and very comfortable and easy to waer. Love the print and the fabric is lightweight. Perfect for summer.",
+        "color":"brown",
+        "size":"M",
+        "stoke":"In Stoke",
+        "quantity": 1
+    },
+    {
+        "pic":"../assets/images/shop/clothes4.jpg",
+        "name":"Jumpsuit",
+        "id":"4",
+        "price":"400.00",
+        "body":"The perfect soft salobit , it is made from conton,it is suitable for baby’s skin , it’s style is very nice and very comfortable and easy to waer. Love the print and the fabric is lightweight. Perfect for summer.",
+        "color":"pink",
+        "size":"M",
+        "stoke":"In Stoke",
+        "quantity": 1
+    },
+    {
+        "pic":"../assets/images/shop/clothes5.jpg",
+        "name":"Jumpsuit",
+        "id":"5",
+        "price":"600.00",
+        "body":"The perfect soft salobit , it is made from conton,it is suitable for baby’s skin , it’s style is very nice and very comfortable and easy to waer. Love the print and the fabric is lightweight. Perfect for summer.",
+        "color":"blue",
+        "size":"M",
+        "stoke":"In Stoke",
+        "quantity": 1
+    },
+    {
+        "pic":"../assets/images/shop/clothes6.jpg",
+        "name":"Bodysuit",
+        "id":"6",
+        "price":"750.00",
+        "body":"The perfect soft salobit , it is made from conton,it is suitable for baby’s skin , it’s style is very nice and very comfortable and easy to waer. Love the print and the fabric is lightweight. Perfect for summer.",
+        "color":"orange",
+        "size":"M",
+        "stoke":"In Stoke",
+        "quantity": 1
+    },
+    {
+        "pic":"../assets/images/shop/clothes7.jpg",
+        "name":"Bodysuit",
+        "id":"7",
+        "price":"200.00",
+        "body":"The perfect soft salobit , it is made from conton,it is suitable for baby’s skin , it’s style is very nice and very comfortable and easy to waer. Love the print and the fabric is lightweight. Perfect for summer.",
+        "color":"cyan",
+        "size":"M",
+        "stoke":"In Stoke",
+        "quantity": 1
+    },
+    {
+        "pic":"../assets/images/shop/clothes8.jpg",
+        "name":"Baby Set",
+        "id":"8",
+        "price":"390.00",
+        "body":"The perfect soft salobit , it is made from conton,it is suitable for baby’s skin , it’s style is very nice and very comfortable and easy to waer. Love the print and the fabric is lightweight. Perfect for summer.",
+        "color":"yellow",
+        "size":"L",
+        "stoke":"In Stoke",
+        "quantity": 1
+    },
+    {
+        "pic":"../assets/images/shop/clothes9.jpg",
+        "name":"Bodysuit",
+        "id":"9",
+        "price":"800.00",
+        "body":"The perfect soft salobit , it is made from conton,it is suitable for baby’s skin , it’s style is very nice and very comfortable and easy to waer. Love the print and the fabric is lightweight. Perfect for summer.",
+        "color":"red",
+        "size":"L",
+        "stoke":"In Stoke",
+        "quantity": 1
+    }
+]

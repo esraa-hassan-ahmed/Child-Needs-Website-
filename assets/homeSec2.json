@@ -1,0 +1,17 @@
+[
+    {
+        "img":"assets/images/home/res.png",
+        "head":"RESTURANTS",
+        "par":"We provide all restaurants with kids play area in Egypt for your kid to play and enjoy out with you and."
+    },
+    {
+        "img":"assets/images/home/nur.png",
+        "head":"NURSERY",
+        "par":"We provide all nurseries near to your home with a day care for children, you can find the nearset nursery."
+    },
+    {
+        "img":"assets/images/home/sport.png",
+        "head":"SPORTS",
+        "par":"We provide all Kids Academies to build confidence and improve your kid skills to be better." 
+    }
+]

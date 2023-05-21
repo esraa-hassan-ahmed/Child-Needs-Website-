@@ -1,0 +1,452 @@
+@font-face {
+    font-family: 'Supermercado';
+	src: url('/assets/Fonts/supermercado/SupermercadoOne-Regular.ttf');
+}
+@font-face {
+    font-family: 'Chewy';
+	src: url('/assets/Fonts/chewy/Chewy.ttf');
+}
+@font-face {
+    font-family: 'Nunito';
+	src: url('/assets/Fonts/nunito/Nunito-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'NunitoLight';
+	src: url('/assets/Fonts/nunito/Nunito-Light.ttf');
+}
+$pink:#e21c3f;
+$blue:#04a2b6;
+$orange:#ff9800;
+$green:#80cd33;
+$inputGrey:hsl(0, 0%, 72%);
+$mai_margin:140px;
+$cardGray:#696464;
+$cardBG:#f8f8f8;
+h1{
+    font-family: 'Chewy';
+}
+h2{
+    font-family: 'Supermercado';
+}
+h5{
+    font-family: 'Nunito';
+}
+p{
+    font-family: 'Nunito';
+}
+button{
+    font-family: 'Nunito';
+}
+.margin{
+    margin-bottom: 140px;
+}
+.inputForm , .textareaForm{
+    border-radius: 10px;
+    width: 100px;
+    border: solid 2px $pink;
+    color: $inputGrey;
+}
+.inputForm:active{
+    border-color: $pink;
+    box-shadow: none;
+}
+.inputForm:focus{
+    border-color: $pink;
+    box-shadow: none;
+}
+.dropMenu{
+    border-radius: 10px;
+    border: solid 2px $pink;
+    color: $pink;
+    background: white;
+}
+.dropMenuToggle{
+    border-radius: 10px;
+    border: solid 2px $pink;
+    color: $pink;
+    background:$pink;
+}
+.dropMenuToggle::after{
+    color: white;
+}
+.show>.btn-primary.dropdown-toggle{
+    background-color: $pink;
+    border-color: $pink;
+}
+.show>.btn-primary.dropdown-toggle:focus{
+    box-shadow: none;
+}
+button:focus{
+    box-shadow: none;
+}
+a{
+    cursor: pointer;
+}
+.button-shadow{
+    background-color: #e21c3f;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 5px 30px;
+    font-size: 16px;
+    font-family: 'Nunito';
+}
+.button-shadow:hover{
+    background-color: $blue;
+    transition: background-color 0.5s ease-in-out;
+    cursor: pointer;
+}
+select{
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    border: solid 2px $pink;
+    color:black;
+    font-size: 18px;
+    option:hover{
+        background-color: $blue;
+    }
+}
+.form-control:focus{
+    box-shadow:none;
+    border-color: $pink;
+}
+.socialMedia{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+}
+
+.facebook{
+    background-color: #3b5998;
+};
+.google{
+    background-color: #d34836;
+}
+.skype{
+    background-color: #00aff0;
+}
+.instgram{
+    background-color: #cd486b;
+}
+.twitter{
+    background-color: #00aced;
+}
+hr {
+    display: block;
+    border: 0;
+    border-top: 2px solid white;
+    width: 30px;
+    margin-top: 0;
+    padding:0;
+}
+button:focus{
+    box-shadow:none;
+}
+.secshop{
+    background-size: cover;
+    background-position: center; 
+}
+.secBg{
+    padding-top:140px;
+    padding-bottom: 140px;
+    background-color: rgba(0, 0, 0, 0.3);
+    h1{
+        color: white;
+        font-size: 50px;
+    }
+    a,span{
+        color:#c0bebe;
+        font-family: 'Nunito';
+        font-size: 18px;
+        text-decoration: none;
+    }
+    a:focus{
+        color:white;
+    }
+    span:first-of-type{
+        color:#c0bebe;
+        padding-right: 20px;
+    }   
+    .clicked{
+        color: white;
+    } 
+}
+.navbar{
+    form{
+        position: absolute;
+        right: 0px;
+        .input-group{
+            .form-control{
+                border-radius: 10px;
+                border: solid 2px $pink;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+                color: $inputGrey;
+            }
+            .form-control:focus{
+                box-shadow: 0 0 0 0.2rem rgba(224, 154, 169, 0.5);
+            }
+            .input-group-text{
+                background-color: $pink;
+                border: solid 2px $pink;
+                border-radius: 10px;
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+                i{
+                    color: white;
+                }
+            }
+        }
+    }
+}
+// ngb-pagination /deep/ .page-item.disabled .page-link {
+//     background-color: $pink;
+//     color: white;
+//     border: 2px solid $pink;
+//     border-radius: 10px;
+// }
+// ngb-pagination /deep/ .page-item.active .page-link {
+//     background-color: $pink;
+//     border: 2px solid $pink;
+//     border-radius: 10px;
+// }
+// ngb-pagination /deep/ .page-link:hover{
+//     background-color: $pink;
+//     color: white;
+// }
+// ngb-pagination /deep/ .page-link{
+//     color: black;
+//     border: 2px solid $pink;
+//     border-radius: 10px;
+//     margin: 3px;
+// }
+// ngb-pagination /deep/ .page-item:last-child .page-link{
+//     border-top-right-radius: 10px;
+//     border-bottom-right-radius:10px;
+// }
+// ngb-pagination /deep/ .page-item:first-child .page-link{
+//     border-top-left-radius: 10px;
+//     border-bottom-left-radius:10px;
+// }
+// ngb-pagination /deep/ .page-link:focus{
+//     box-shadow:none;
+// }
+ngb-rating /deep/ span{
+    color: #fac917;
+    font-size: 22px;
+}
+.card{
+    border: none;
+    .cardImg{
+        position: relative;
+        border-radius: 25px;
+        .hover{
+            color: white;
+            position: absolute;
+            border-radius: 25px;
+            .zoomIcon{
+                border-radius: 50%;
+                background-color: $pink;
+                padding: 12px 13px;
+                font-size: 18px;
+            }
+            .zoomIcon:hover{
+                background-color: $blue;
+                cursor: pointer;
+                transition: background-color 0.5s ease-in-out;
+            }
+            .zoomBtn{
+                background-color: transparent;
+                border: transparent;
+                color: white;
+            }
+            .zoomBtn:focus{
+                box-shadow: none;
+                outline: none;
+            }   
+        }
+        img{
+            border-radius: 25px;
+            width: 100%;
+        } 
+    }
+}
+.dropDownData{
+    .inputBtn{
+        width: 200px;
+    }
+    .dropdown-toggle-split{
+        width: 40px
+    }
+    .left{
+        background-color: transparent;
+        border: solid 2px $pink;
+        color: $inputGrey;
+        border-radius: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        text-align: left;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .right{
+        background-color: $pink;
+        border: solid 2px $pink;
+        color: white;
+        border-radius: 10px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    .dropdown-menu{
+        left:auto !important;
+        right: 0px;
+        width: 230px;
+        .dropdown-item:hover{
+            background-color: $pink;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+.item-nav{
+    ul{
+        li{
+            a{
+                color: #545454;
+            }
+            .quantity:hover{
+                background-color: white;
+            }
+            i{
+                font-size:14px;
+                color: #545454;
+            }
+            .background{
+                background-color: #e5e5e5;
+
+            }
+        }
+    }
+}
+.view-cart{
+    .subtotal{
+        font-size:30px;
+    }
+    table{
+        thead{
+        background-color:$pink;
+        color: white; 
+            th{
+                font-family: 'Nunito';
+            }
+        }
+        .cart-img{
+        width:200px;
+        height:200px;
+            p{
+                font-family: 'NunitoLight';
+                color:$cardGray;
+            }
+        }
+        tr{
+            border-bottom:1px solid $cardGray;
+            .delete{
+                font-size: 26px;
+            }
+        }
+        td , th{
+            vertical-align:middle;
+            border-top:0px;
+            font-family: 'NunitoLight';           
+        }
+        td{
+            color:$cardGray;
+            span{
+                // border:1px solid gray;
+                height:25px;
+                display:inline-block;
+
+
+            }
+        }
+    
+    }
+}
+.marginTop{
+    padding-top: 140px;
+}
+.home-contact{
+    position:relative;
+    .movegirl{
+        position: relative;
+        -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+        animation-name: example;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function:linear;
+        .girlImg{
+            position:absolute;
+            top:-220px;
+            left:0px;
+        }
+    }
+    @keyframes example {
+        0%   { left:0px; }
+        100% {left:calc(100px);
+        }
+    }
+    button{
+        background-color: $pink;
+        color: white;
+        transition: all 0.2s linear;
+    }
+}
+.minus{
+    cursor: pointer;
+}
+ngb-carousel /deep/ .carousel-control-next-icon,
+ngb-carousel /deep/ .carousel-control-prev-icon {
+    background-color: $pink;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;   
+}
+ngb-carousel /deep/ .carousel-control-prev,
+ngb-carousel /deep/ .carousel-control-next {
+    top: inherit;
+    bottom: inherit;
+    margin-top: 40px;
+    cursor: pointer;
+    width: 3%;
+    opacity: 1;
+}
+ngb-carousel /deep/ .carousel-control-prev-icon:hover,
+ngb-carousel /deep/ .carousel-control-next-icon:hover {
+    background-color: $blue;
+    transition: background-color 0.4s ease-in-out;
+}
+ngb-carousel /deep/ .carousel-inner{
+    display: flex;
+    justify-content: center
+}
+ngb-carousel /deep/ .carousel-control-prev{
+    left: 46%;
+}
+ngb-carousel /deep/ .carousel-control-next{
+    right: 47%;
+}
+ngb-carousel /deep/ .carousel-item{
+    margin-right: 0px;
+}
+:focus {outline:0}
+
+
+

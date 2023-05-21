@@ -1,0 +1,60 @@
+[{
+    "img":"assets/images/nursery/pic1.jpeg",
+    "name":"Green Leaves Nursery",
+    "location":"9 Saeed Zo AL Fakkar Janaklis, Alexandria, Alexandria Governorate",
+    "number":"0101 067 8469",
+    "description":"Green Leaves Nursery welcomes your child with all love and care",
+    "capacity":"20 Kids",
+    "age":"2Y-6Y",
+    "time":"7.30am-4pm"
+},
+{
+    "img":"assets/images/nursery/pic2.jpeg",
+    "name":"Future Nursery Alex",
+    "location":"12 Ibrahim El-Attar,zeizenya,Alexandria, Egypt 21311",
+    "number":"0100 323 2093",
+    "description":"Future Nursery Alex welcomes your child with all love and care",
+    "capacity":"20 Kids",
+    "age":"2Y-6Y",
+    "time":"7.30am-4pm"
+},
+{
+    "img":"assets/images/nursery/pic3.jpeg",
+    "name":"Kids Alex Nursery",
+    "location":"Filip Glad St ,Victoria, Rana Tower, Alexandria, Egypt",
+    "number":"0128 136 9324",
+    "description":"Rehabilitation of private schools and hosting daily after schools",
+    "capacity":"20 Kids",
+    "age":"2Y-6Y",
+    "time":"7am-8pm"
+},
+{
+    "img":"assets/images/nursery/pic4.jpeg",
+    "name":"Green Leaves Nursery",
+    "location":"9 Saeed Zo AL Fakkar Janaklis, Alexandria, Alexandria Governorate",
+    "number":"0101 067 8469",
+    "description":"Green Leaves Nursery welcomes your child with all love and care",
+    "capacity":"20 Kids",
+    "age":"2Y-6Y",
+    "time":"7.30am-4pm"
+},
+{
+    "img":"assets/images/nursery/pic5.jpeg",
+    "name":"Future Nursery Alex",
+    "location":"12 Ibrahim El-Attar,zeizenya,Alexandria, Egypt 21311",
+    "number":"0100 323 2093",
+    "description":"Future Nursery Alex welcomes your child with all love and care",
+    "capacity":"20 Kids",
+    "age":"2Y-6Y",
+    "time":"7.30am-4pm"
+},
+{
+    "img":"assets/images/nursery/pic6.jpeg",
+    "name":"Kids Alex Nursery",
+    "location":"Filip Glad St ,Victoria, Rana Tower, Alexandria, Egypt",
+    "number":"0128 136 9324",
+    "description":"Rehabilitation of private schools and hosting daily after schools",
+    "capacity":"20 Kids",
+    "age":"2Y-6Y",
+    "time":"7am-8pm"
+}]
