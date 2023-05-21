@@ -13,6 +13,10 @@ import * as $ from 'jquery';
 })
 export class HomeComponent implements OnInit {
   sec2Data: Array<object>;
+  user_name: string = "";
+  user_email: any = "";
+  user_message: string = "";
+  
   constructor(private q:QueryService , private router:Router) { 
     this.sec2Data=[];
     this.getSec2Data();
@@ -21,8 +25,8 @@ export class HomeComponent implements OnInit {
   getSec2Data():void{
     let path:string='./assets/homeSec2.json';
     this.q.getData(path).subscribe(
-      res => {console.log(res);
-      this.sec2Data=res;
+      res => {
+        this.sec2Data=res;
       },
       err => {console.log(err);},
       () => {}

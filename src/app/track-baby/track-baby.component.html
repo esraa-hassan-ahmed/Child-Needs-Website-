@@ -7,16 +7,17 @@
               </div>
    
               <div class="col-md-6 track offset-md-3  pb-5 pl-5 pr-5  ">
-                    <div>
-                        <h5>{{data.head}}</h5>
-                        <p class="pink">{{data.p1}}</p>
-                        <p class="blue">{{data.p2}}</p>
-                        <p class="pink">{{data.p3}}</p>
-                        <p class="blue">{{data.p4}}</p>
-                        <p class="pink">{{data.p5}}</p>
-                        <p class="blue">{{data.p6}}</p>
+                    <div *ngIf="showDataFlag; else showForm"> 
+                        <h5>{{data?.head}}</h5>
+                        <p class="pink">{{data?.p1}}</p>
+                        <p class="blue">{{data?.p2}}</p>
+                        <p class="pink">{{data?.p3}}</p>
+                        <p class="blue">{{data?.p4}}</p>
+                        <p class="pink">{{data?.p5}}</p>
+                        <p class="blue">{{data?.p6}}</p>
                     </div>
-                  <form class=" w-100" name="babyTrack" #babyTrack ="ngForm" novalidate (ngSubmit)="trackForm(babyTrack)">
+                    <ng-template #showForm>
+                      <form class=" w-100" name="babyTrack" #babyTrack ="ngForm" novalidate (ngSubmit)="trackForm(babyTrack)">
                         <div class="form-group pb-4">
                           <input class="form-control " type="date" placeholder="Date Of Birth"  name="baby_birth" [(ngModel)]="baby_birth" required>
                         </div>
@@ -29,7 +30,8 @@
                         <div class="d-flex justify-content-center ">
                             <button type="submit" (click)="getBabyData()" class="btn  button-shadow marginBottom " [disabled]="!babyTrack.valid">Submit</button>
                         </div>         
-                   </form>
+                      </form>
+                    </ng-template>
               </div>
 
         

@@ -10,6 +10,8 @@ import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 export class NurseryComponent implements OnInit {
   nurseryData: Array<object>;
   closeResult: string;
+  term: string;
+
   constructor(private q:QueryService, private modalService: NgbModal) {
     this.nurseryData=[];
     this.getnurseryData();

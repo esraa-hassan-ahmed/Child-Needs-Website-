@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 import * as $ from 'jquery';
 import { DataPipeService } from './data-pipe.service';
 
@@ -19,6 +19,13 @@ export class AppComponent {
   ) {
     this.data.currentMessage.subscribe(message => this.cardItemsQuantities = message);
     this.navbarCollapsed = true;
+
+     // Subscribe to NavigationEnd event
+     this.router.events.subscribe((evt) => {
+      if (evt instanceof NavigationEnd) {
+        window.scrollTo(0, 0); // scroll to top on navigation
+      }
+    });
   }
 
   reload(){

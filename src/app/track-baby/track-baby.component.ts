@@ -10,34 +10,35 @@ import * as $ from 'jquery';
   styleUrls: ['./track-baby.component.scss']
 })
 export class TrackBabyComponent implements OnInit {
-  data:object;
+  data:object = {};
+  showDataFlag:boolean = false;
+  baby_birth: any;
+  baby_weight: number;
+  eat_time: number;
+
   constructor(private q:QueryService) {
     this.data={};
    }
   
   trackForm(drData:NgForm): void{
-    console.log(drData);
     drData.reset();
-
   }
 
   getBabyData():void{
     let path:string='./assets/trackBaby.json';
     this.q.getData(path).subscribe(
-      res => {console.log(res);
-      this.data=res;
+      res => {
+        this.data=res;
+        this.showDataFlag = true;
       },
-      err => {console.log(err);},
+      err => {
+        this.showDataFlag = false;
+      },
       () => {}
     );
   }
 
   ngOnInit() {
-
-   
-    $("button").click(function(){
-        $("form").css("display","none");
-    })
     
   }
 

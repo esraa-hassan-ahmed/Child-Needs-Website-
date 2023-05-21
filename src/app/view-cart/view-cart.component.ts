@@ -14,8 +14,8 @@ export class ViewCartComponent implements OnInit {
 newData;
 deletedItem;
 cartStorage;
-flag:boolean;
 itemId;
+totalPrice:number = 0;
 
   constructor(
     private q:QueryService ,
@@ -23,7 +23,6 @@ itemId;
     private data: DataPipeService
   ) { 
     this.newData=[];
-    this.flag=true;
   }
 
 getCartItems(){
@@ -31,45 +30,46 @@ getCartItems(){
     this.cartStorage = JSON.parse(localStorage.getItem('cart'));
     this.q.getData('assets/shop.json').subscribe(res =>{
       res.forEach(element => {
-        console.log("data",this.newData);
-        console.log(this.cartStorage.indexOf(element.id));
-        console.log(this.cartStorage);
         if(this.cartStorage.indexOf(element.id)!=-1){
-          element.quantity = 1;
+          element.subtotal = element.quantity * JSON.parse(element.price);
+          this.totalPrice += element.subtotal;
           this.newData.push(element);
-          this.flag=false;
         }
       });
-      console.log(this.newData);
     });
-    if(this.flag==true){
-      this.q.getData('assets/toys.json').subscribe(res =>{
-        res.forEach(element => {
-          if(this.cartStorage.indexOf(element.id)!=-1){
-            element.quantity = 1;
-            this.newData.push(element);
-          }
-        });     
-        console.log(this.newData);
-      })
-    }
+    this.q.getData('assets/toys.json').subscribe(res =>{
+      res.forEach(element => {
+        if(this.cartStorage.indexOf(element.id)!=-1){
+          element.subtotal = element.quantity * JSON.parse(element.price);
+          this.totalPrice += element.subtotal;
+          this.newData.push(element);
+        }
+      });     
+    })
   }
   else{
     this.newData = [];
   }
 }
 
-plus(index,quantity){
-  this.newData[index].quantity = parseInt(quantity)+1;
+plus(index){
+  var currentItem = this.newData[index]
+  currentItem.quantity = currentItem.quantity + 1;
+  currentItem.subtotal = currentItem.quantity * currentItem.price;
+  this.totalPrice = this.newData.reduce((accumulator, currentValue) => accumulator + currentValue.subtotal, 0);
 }
-minus(index,quantity){
-  if(quantity > 1){
-    this.newData[index].quantity = parseInt(quantity)-1;
+minus(index){
+  var currentItem = this.newData[index];
+  if(currentItem.quantity > 1){
+    currentItem.quantity = currentItem.quantity - 1;
+    currentItem.subtotal = currentItem.quantity * this.newData[index].price;
+    this.totalPrice = this.newData.reduce((accumulator, currentValue) => accumulator + currentValue.subtotal, 0);
   }
 }
 delete(itemId){
   for(let i=0;i< this.newData.length;i++){
     if(this.newData[i].id == itemId){
+      this.totalPrice -= this.newData[i].subtotal;
       this.newData.splice(i,1);
       this.deletedItem = JSON.parse(localStorage.getItem('cart'));
       this.deletedItem.splice(i,1);
@@ -89,62 +89,5 @@ newMessage() {
 
 ngOnInit() {
   this.getCartItems();
-  $(document).ready(function(){ 
-  function quen(){
-
-  let h= $(".price");
-  console.log("hhh=" + h);
-  let n= $(".a");
-  let o= $(".itemTotal");
-
-  for(var i=0; i<h.length; i++){
-  let zz = h.eq(i).text();
-  let yy = n.eq(i).text();
-  let tt = parseInt(zz)  * parseInt(yy) ;
-  o.eq(i).text(tt);
-
-}
-
-}
-quen();
-
-$(".minus").on("click",function(){
-  quen();
-  sum();
-})
-
-$(".plus").on("click",function(){
-  quen();
-  sum();
-})
-
-$(".delete").on("click",function(){
-  sum();
-})
-
-function sum(){
-
-        let x= $(".total")
-        let y=0;
-        let arr=[];
-        console.log("x=" + x);
-        for(var i=0; i<x.length; i++){
-        let z = x.eq(i).html();
-        // z=parseInt(z);
-        arr.push(z)
-        }
-        let r=0;
-        for(var i=0; i<arr.length; i++){
-          r+=arr[i];
-        }
-        $("#totalPrice").text(r);
-    
-    
-      }
-      sum();
-      
-    
-
-});
 }
 }

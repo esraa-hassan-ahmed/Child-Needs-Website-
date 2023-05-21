@@ -8,6 +8,8 @@ import {QueryService} from '../query.service';
 })
 export class MediaBooksComponent implements OnInit {
   booksdata: Array<object>;
+  term: string;
+
   constructor(
     private q:QueryService , 
     private modalService: NgbModal

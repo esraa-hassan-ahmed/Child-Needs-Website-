@@ -5,10 +5,17 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class DataPipeService {
-  private messageSource = new BehaviorSubject(JSON.parse(localStorage.getItem('cart')).length);
+  private messageSource = new BehaviorSubject<number>(0);
   currentMessage = this.messageSource.asObservable();
+
+  constructor() {
+    const cart = JSON.parse(localStorage.getItem('cart'));
+    if (cart) {
+      this.messageSource.next(cart.length);
+    }
+  }
   
-  changeMessage(message: string) {
+  changeMessage(message: number) {
     this.messageSource.next(message)
   }
 

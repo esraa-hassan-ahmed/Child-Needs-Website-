@@ -7,7 +7,8 @@
         "body":"The perfect soft salobit , it is made from conton,it is suitable for baby’s skin , it’s style is very nice and very comfortable and easy to waer. Love the print and the fabric is lightweight. Perfect for summer.",
         "color":"green",
         "size":"S",
-        "stoke":"In Stoke"
+        "stoke":"In Stoke",
+        "quantity": 1
     },
     {
         "pic":"../assets/images/shop/clothes2.jpg",
@@ -17,7 +18,8 @@
         "body":"The perfect soft salobit , it is made from conton,it is suitable for baby’s skin , it’s style is very nice and very comfortable and easy to waer. Love the print and the fabric is lightweight. Perfect for summer.",
         "color":"red",
         "size":"S",
-        "stoke":"In Stoke"
+        "stoke":"In Stoke",
+        "quantity": 1
     },
     {
         "pic":"../assets/images/shop/clothes3.jpg",
@@ -27,7 +29,8 @@
         "body":"The perfect soft salobit , it is made from conton,it is suitable for baby’s skin , it’s style is very nice and very comfortable and easy to waer. Love the print and the fabric is lightweight. Perfect for summer.",
         "color":"brown",
         "size":"M",
-        "stoke":"In Stoke"
+        "stoke":"In Stoke",
+        "quantity": 1
     },
     {
         "pic":"../assets/images/shop/clothes4.jpg",
@@ -37,7 +40,8 @@
         "body":"The perfect soft salobit , it is made from conton,it is suitable for baby’s skin , it’s style is very nice and very comfortable and easy to waer. Love the print and the fabric is lightweight. Perfect for summer.",
         "color":"pink",
         "size":"M",
-        "stoke":"In Stoke"
+        "stoke":"In Stoke",
+        "quantity": 1
     },
     {
         "pic":"../assets/images/shop/clothes5.jpg",
@@ -47,7 +51,8 @@
         "body":"The perfect soft salobit , it is made from conton,it is suitable for baby’s skin , it’s style is very nice and very comfortable and easy to waer. Love the print and the fabric is lightweight. Perfect for summer.",
         "color":"blue",
         "size":"M",
-        "stoke":"In Stoke"
+        "stoke":"In Stoke",
+        "quantity": 1
     },
     {
         "pic":"../assets/images/shop/clothes6.jpg",
@@ -57,7 +62,8 @@
         "body":"The perfect soft salobit , it is made from conton,it is suitable for baby’s skin , it’s style is very nice and very comfortable and easy to waer. Love the print and the fabric is lightweight. Perfect for summer.",
         "color":"orange",
         "size":"M",
-        "stoke":"In Stoke"
+        "stoke":"In Stoke",
+        "quantity": 1
     },
     {
         "pic":"../assets/images/shop/clothes7.jpg",
@@ -67,7 +73,8 @@
         "body":"The perfect soft salobit , it is made from conton,it is suitable for baby’s skin , it’s style is very nice and very comfortable and easy to waer. Love the print and the fabric is lightweight. Perfect for summer.",
         "color":"cyan",
         "size":"M",
-        "stoke":"In Stoke"
+        "stoke":"In Stoke",
+        "quantity": 1
     },
     {
         "pic":"../assets/images/shop/clothes8.jpg",
@@ -77,7 +84,8 @@
         "body":"The perfect soft salobit , it is made from conton,it is suitable for baby’s skin , it’s style is very nice and very comfortable and easy to waer. Love the print and the fabric is lightweight. Perfect for summer.",
         "color":"yellow",
         "size":"L",
-        "stoke":"In Stoke"
+        "stoke":"In Stoke",
+        "quantity": 1
     },
     {
         "pic":"../assets/images/shop/clothes9.jpg",
@@ -87,6 +95,7 @@
         "body":"The perfect soft salobit , it is made from conton,it is suitable for baby’s skin , it’s style is very nice and very comfortable and easy to waer. Love the print and the fabric is lightweight. Perfect for summer.",
         "color":"red",
         "size":"L",
-        "stoke":"In Stoke"
+        "stoke":"In Stoke",
+        "quantity": 1
     }
 ]

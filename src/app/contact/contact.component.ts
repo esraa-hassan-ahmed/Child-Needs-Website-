@@ -10,12 +10,12 @@ export class ContactComponent implements OnInit {
 
   constructor() { }
 
-  
+  user_name: string = "";
+  user_email: any = "";
+  user_message: string = "";
 
   contactUs(contactData:NgForm): void{
-    console.log(contactData);
     contactData.reset();
-
   }
 
   ngOnInit() {

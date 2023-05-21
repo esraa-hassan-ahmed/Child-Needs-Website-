@@ -13,6 +13,13 @@ import * as $ from 'jquery';
 export class DoctorComponent implements OnInit {
   closeResult: string;
   drdata: Array<object>;
+  dr_name: string;
+  dr_address: any;
+  dr_facebook: any;
+  dr_gmail: any;
+  dr_Skype: any;
+  dr_description: string;
+
   constructor(
     private q:QueryService , 
     private modalService: NgbModal

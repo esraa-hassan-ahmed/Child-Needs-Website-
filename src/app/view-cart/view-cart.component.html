@@ -34,11 +34,11 @@
                 <td>
                   <nav class="item-nav" aria-label="...">
                     <ul class="pagination">
-                      <li class="page-item disabled minus" (click)="minus(i,data.quantity) ">
+                      <li class="page-item disabled minus" (click)="minus(i) ">
                         <a class="page-link background" tabindex="-1"><i class="fa fa-minus"></i></a>
                       </li>
                       <li class="page-item"><a class="page-link quantity a" id="any">{{data.quantity}}</a></li>
-                      <li class="page-item plus" (click)="plus(i,data.quantity)">
+                      <li class="page-item plus" (click)="plus(i)">
                         <a class="page-link background"><i class="fa fa-plus"></i></a>
                       </li>
                     </ul>
@@ -54,7 +54,7 @@
 
 
     <div class="col-12">
-      <p class="subtotal">Total Price : <span id="totalPrice"> </span> </p>
+      <p class="subtotal">Total Price : <span id="totalPrice"> {{totalPrice}} </span> </p>
       <button class="button-shadow mr-2 mb-3" routerLink="/shop">Continue Shopping</button>
       <button class="button-shadow">Check Out</button>
     </div>

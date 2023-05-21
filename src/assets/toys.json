@@ -6,7 +6,8 @@
         "price":"50.00",
         "body":"It will provide you with hours of fun, Educational toys that help children learn",
         "color":"brown",
-        "stoke":"In Stoke"
+        "stoke":"In Stoke",
+        "quantity": 1
     },
     {
         "pic":"../assets/images/toys/toy2.jpg",
@@ -15,7 +16,8 @@
         "price":"100.00",
         "body":"Buzz lightyear action figure The helmet opens and closes Has a sound button Has lights button Can move all its joints",
         "color":"green",
-        "stoke":"In Stoke"
+        "stoke":"In Stoke",
+        "quantity": 1
     },
     {
         "pic":"../assets/images/toys/toy3.jpg",
@@ -24,7 +26,8 @@
         "price":"30.00",
         "body":"It will provide you with hours of fun, Educational toys that help children learn",
         "color":"red",
-        "stoke":"In Stoke"
+        "stoke":"In Stoke",
+        "quantity": 1
     },
     {
         "pic":"../assets/images/toys/toy4.jpg",
@@ -33,7 +36,8 @@
         "price":"16.00",
         "body":"It will provide you with hours of fun, Educational toys that help children learn",
         "color":"blue",
-        "stoke":"In Stoke"
+        "stoke":"In Stoke",
+        "quantity": 1
     },
     {
         "pic":"../assets/images/toys/toy5.jpg",
@@ -42,7 +46,8 @@
         "price":"13.75",
         "body":"It will provide you with hours of fun, Educational toys that help children learn",
         "color":"red",
-        "stoke":"In Stoke"
+        "stoke":"In Stoke",
+        "quantity": 1
     },
     {
         "pic":"../assets/images/toys/toy6.jpg",
@@ -51,7 +56,8 @@
         "price":"310.00",
         "body":"A very important toy that helps develops basic number and counting skills from an early age. Children can match the numbered squares to dots on the base of the puzzle. The rings and printed numbers have matching colors for easier use",
         "color":"cyan",
-        "stoke":"In Stoke"
+        "stoke":"In Stoke",
+        "quantity": 1
     },
     {
         "pic":"../assets/images/toys/toy7.jpg",
@@ -60,7 +66,8 @@
         "price":"40.00",
         "body":"It will provide you with hours of fun, Educational toys that help children learn",
         "color":"orange",
-        "stoke":"In Stoke"
+        "stoke":"In Stoke",
+        "quantity": 1
     },
     {
         "pic":"../assets/images/toys/toy8.jpg",
@@ -69,7 +76,8 @@
         "price":"35.90",
         "body":"It will provide you with hours of fun, Educational toys that help children learn",
         "color":"yellow",
-        "stoke":"In Stoke"
+        "stoke":"In Stoke",
+        "quantity": 1
     },
     {
         "pic":"../assets/images/toys/toy9.jpg",
@@ -78,6 +86,7 @@
         "price":"208.00",
         "body":"It is a bright and colorful little monster for your little one to interact with. This soft toy will bring smiles and giggles as your child activates the sound effects and explores the different textures",
         "color":"pink",
-        "stoke":"In Stoke"
+        "stoke":"In Stoke",
+        "quantity": 1
     }
 ]

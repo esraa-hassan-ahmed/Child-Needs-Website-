@@ -10,6 +10,7 @@ import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 export class ResturantsComponent implements OnInit {
   resData: Array<object>;
   closeResult: string;
+  term: string;
 
   constructor(private q:QueryService , private modalService: NgbModal) {
     this.resData=[];

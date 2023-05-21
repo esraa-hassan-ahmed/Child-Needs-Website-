@@ -8,7 +8,8 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./media.component.scss']
 })
 export class MediaComponent implements OnInit {
-   videoData=[{
+  term: string;
+  videoData=[{
      link:'1hyjLD7pk10'
    },
    {
