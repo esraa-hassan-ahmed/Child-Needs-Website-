@@ -1,6 +1,6 @@
 [
     {
-        "pic":"../assets/images/shop/clothes1.jpg",
+        "pic":"assets/images/shop/clothes1.jpg",
         "name":"Bodysuit",
         "id":"1",
         "price":"240.00",
@@ -11,7 +11,7 @@
         "quantity": 1
     },
     {
-        "pic":"../assets/images/shop/clothes2.jpg",
+        "pic":"assets/images/shop/clothes2.jpg",
         "name":"Bodysuit",
         "id":"2",
         "price":"100.00",
@@ -22,7 +22,7 @@
         "quantity": 1
     },
     {
-        "pic":"../assets/images/shop/clothes3.jpg",
+        "pic":"assets/images/shop/clothes3.jpg",
         "name":"Bodysuit",
         "id":"3",
         "price":"350.00",
@@ -33,7 +33,7 @@
         "quantity": 1
     },
     {
-        "pic":"../assets/images/shop/clothes4.jpg",
+        "pic":"assets/images/shop/clothes4.jpg",
         "name":"Jumpsuit",
         "id":"4",
         "price":"400.00",
@@ -44,7 +44,7 @@
         "quantity": 1
     },
     {
-        "pic":"../assets/images/shop/clothes5.jpg",
+        "pic":"assets/images/shop/clothes5.jpg",
         "name":"Jumpsuit",
         "id":"5",
         "price":"600.00",
@@ -55,7 +55,7 @@
         "quantity": 1
     },
     {
-        "pic":"../assets/images/shop/clothes6.jpg",
+        "pic":"assets/images/shop/clothes6.jpg",
         "name":"Bodysuit",
         "id":"6",
         "price":"750.00",
@@ -66,7 +66,7 @@
         "quantity": 1
     },
     {
-        "pic":"../assets/images/shop/clothes7.jpg",
+        "pic":"assets/images/shop/clothes7.jpg",
         "name":"Bodysuit",
         "id":"7",
         "price":"200.00",
@@ -77,7 +77,7 @@
         "quantity": 1
     },
     {
-        "pic":"../assets/images/shop/clothes8.jpg",
+        "pic":"assets/images/shop/clothes8.jpg",
         "name":"Baby Set",
         "id":"8",
         "price":"390.00",
@@ -88,7 +88,7 @@
         "quantity": 1
     },
     {
-        "pic":"../assets/images/shop/clothes9.jpg",
+        "pic":"assets/images/shop/clothes9.jpg",
         "name":"Bodysuit",
         "id":"9",
         "price":"800.00",

@@ -1,6 +1,6 @@
 [
     {
-       "drImg":"../assets/images/doctors/usama.jpg",
+       "drImg":"assets/images/doctors/usama.jpg",
       "name":"Usama Yahia",
       "drSpecialization":"Consultant Psychiatrist",
       "address":"20 st , Victoria Alexandria",
@@ -10,7 +10,7 @@
       "skype":"https://www.skype.com/en/"
     },
     {
-       "drImg":"../assets/images/doctors/samersohdy.jpg",
+       "drImg":"assets/images/doctors/samersohdy.jpg",
       "name":"Samer Sohdy",
       "drSpecialization":"Consultant Psychiatrist",
       "address":"20 st , sdi gaber Alexandria",
@@ -20,7 +20,7 @@
       "skype":"https://www.skype.com/en/"
     },
     {
-       "drImg":"../assets/images/doctors/MohamedTaha.jpeg",
+       "drImg":"assets/images/doctors/MohamedTaha.jpeg",
       "name":"Mohamed Taha",
       "drSpecialization":"Consultant Psychiatrist",
       "address":"20 st , Glim Alexandria",

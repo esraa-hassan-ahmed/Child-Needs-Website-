@@ -43,7 +43,7 @@ export class MediaComponent implements OnInit {
 
   getEmbedURL(data){
     // 'http://www.youtube.com/embed/1hyjLD7pk10?ecver=2'
-    return this.santizier.bypassSecurityTrustResourceUrl('http://www.youtube.com/embed/'+data)
+    return this.santizier.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/'+data)
   }
 
 }

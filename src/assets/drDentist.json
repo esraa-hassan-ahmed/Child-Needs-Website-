@@ -1,5 +1,5 @@
 [
-  { "drImg":"../assets/images/doctors/MohameEmad.jpeg",
+  { "drImg":"assets/images/doctors/MohameEmad.jpeg",
       "name":"Mohamed Emad",
       "drSpecialization":"Dentist",
       "address":"60 st , Smoha Alexandria",
@@ -8,7 +8,7 @@
       "gmail":"mohamedEmad240@gmail.com",
       "skype":"https://www.skype.com/en/"
     },
-    { "drImg":"../assets/images/doctors/ryadahmed.jpg",
+    { "drImg":"assets/images/doctors/ryadahmed.jpg",
       "name":"Ryad Ahmed",
       "drSpecialization":"Dentist",
       "address":"60 st , gnaklis Alexandria",
@@ -17,7 +17,7 @@
       "gmail":"http://www.gmail.com",
       "skype":"https://www.skype.com/en/"
     },
-    { "drImg":"../assets/images/doctors/emad.png",
+    { "drImg":"assets/images/doctors/emad.png",
       "name":"Mohamed Emad",
       "drSpecialization":"Dentist",
       "address":"20 st , loran Alexandria",
@@ -26,7 +26,7 @@
       "gmail":"http://www.gmail.com",
       "skype":"https://www.skype.com/en/"
     },
-    { "drImg":"../assets/images/doctors/elkashab.png",
+    { "drImg":"assets/images/doctors/elkashab.png",
       "name":"El Khashab Dental Clinic",
       "drSpecialization":"Dentist",
       "address":"29 st , Abu Qir Alexandria",
