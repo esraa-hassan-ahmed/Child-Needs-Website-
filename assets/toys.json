@@ -1,6 +1,6 @@
 [
     {
-        "pic":"../assets/images/toys/toy1.jpg",
+        "pic":"assets/images/toys/toy1.jpg",
         "name":"Dominoes",
         "id":"10",
         "price":"50.00",
@@ -10,7 +10,7 @@
         "quantity": 1
     },
     {
-        "pic":"../assets/images/toys/toy2.jpg",
+        "pic":"assets/images/toys/toy2.jpg",
         "name":"Buzz lightyear",
         "id":"11",
         "price":"100.00",
@@ -20,7 +20,7 @@
         "quantity": 1
     },
     {
-        "pic":"../assets/images/toys/toy3.jpg",
+        "pic":"assets/images/toys/toy3.jpg",
         "name":"Rubik's cubes",
         "id":"12",
         "price":"30.00",
@@ -30,7 +30,7 @@
         "quantity": 1
     },
     {
-        "pic":"../assets/images/toys/toy4.jpg",
+        "pic":"assets/images/toys/toy4.jpg",
         "name":"Rubic Cube",
         "id":"13",
         "price":"16.00",
@@ -40,7 +40,7 @@
         "quantity": 1
     },
     {
-        "pic":"../assets/images/toys/toy5.jpg",
+        "pic":"assets/images/toys/toy5.jpg",
         "name":"UNO",
         "id":"14",
         "price":"13.75",
@@ -50,7 +50,7 @@
         "quantity": 1
     },
     {
-        "pic":"../assets/images/toys/toy6.jpg",
+        "pic":"assets/images/toys/toy6.jpg",
         "name":"Edu Fun",
         "id":"15",
         "price":"310.00",
@@ -60,7 +60,7 @@
         "quantity": 1
     },
     {
-        "pic":"../assets/images/toys/toy7.jpg",
+        "pic":"assets/images/toys/toy7.jpg",
         "name":"Farm Dominoes",
         "id":"16",
         "price":"40.00",
@@ -70,7 +70,7 @@
         "quantity": 1
     },
     {
-        "pic":"../assets/images/toys/toy8.jpg",
+        "pic":"assets/images/toys/toy8.jpg",
         "name":"Twisting Insect",
         "id":"17",
         "price":"35.90",
@@ -80,7 +80,7 @@
         "quantity": 1
     },
     {
-        "pic":"../assets/images/toys/toy9.jpg",
+        "pic":"assets/images/toys/toy9.jpg",
         "name":"Sassy Baby",
         "id":"18",
         "price":"208.00",

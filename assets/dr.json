@@ -1,6 +1,6 @@
 [
     {
-       "drImg":"../assets/images/doctors/MohamedTaha.jpeg",
+       "drImg":"assets/images/doctors/MohamedTaha.jpeg",
       "name":"Mohamed Taha",
       "drSpecialization":"Consultant Psychiatrist",
       "address":"20 st , Glim Alexandria",
@@ -9,7 +9,7 @@
       "gmail":"http://www.gmail.com",
       "skype":"mohamedtaha60@outlook.com"
     },
-    { "drImg":"../assets/images/doctors/MohameEmad.jpeg",
+    { "drImg":"assets/images/doctors/MohameEmad.jpeg",
       "name":"Mohamed Emad",
       "drSpecialization":"Dentist",
       "address":"60 st , Smoha Alexandria",
@@ -19,7 +19,7 @@
       "skype":"mohamedEmad2@outlook.com"
     },
     {
-      "drImg":"../assets/images/doctors/amr.jpg",
+      "drImg":"assets/images/doctors/amr.jpg",
       "name":"Amr Mahmoud",
       "drSpecialization":"Women and Obstetrics",
       "address":"50 st , victoria Alexandria",

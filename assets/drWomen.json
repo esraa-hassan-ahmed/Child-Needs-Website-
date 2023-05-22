@@ -1,6 +1,6 @@
 [
     {
-      "drImg":"../assets/images/doctors/amrAbbassy.jpg",
+      "drImg":"assets/images/doctors/amrAbbassy.jpg",
       "name":"Amr Abbassy",
       "drSpecialization":"Women and Obstetrics",
       "address":"18 st , Loran Alexandria",
@@ -10,7 +10,7 @@
       "skype":"https://www.skype.com/en/"
     },
     {
-      "drImg":"../assets/images/doctors/alaa.jpg",
+      "drImg":"assets/images/doctors/alaa.jpg",
       "name":"Alaa Fahmy",
       "drSpecialization":"Women and Obstetrics",
       "address":"18 st , sdi gaber Alexandria",
@@ -20,7 +20,7 @@
       "skype":"https://www.skype.com/en/"
     },
     {
-      "drImg":"../assets/images/doctors/amr.jpg",
+      "drImg":"assets/images/doctors/amr.jpg",
       "name":"Amr Mahmoud",
       "drSpecialization":"Women and Obstetrics",
       "address":"50 st , victoria Alexandria",
