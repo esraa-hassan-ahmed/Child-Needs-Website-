@@ -36,7 +36,7 @@
         </ul>
       </nav>
       <br>
-      <span>Subtotal:</span><span class="redPrice ml-2" id="itemTotal">{{itemData.price}}</span> <span class="redPrice">LE</span> <br>
+      <span>Subtotal:</span><span class="redPrice ml-2" id="itemTotal">{{subtotal}}</span> <span class="redPrice">LE</span> <br>
       <div class="mt-5 margin">
         <button type="button" class="btn button-shadow mr-3 top" (click)="addItemToCart(itemData.id)">ADD TO CART</button>
         <button type="button" class="btn button-shadow" (click)="addWishListCart(itemData.id)">ADD TO Wish List</button>

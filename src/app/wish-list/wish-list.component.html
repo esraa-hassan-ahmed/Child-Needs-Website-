@@ -33,7 +33,7 @@
             <td>{{data.name}}</td>
             <td class="pr-2">{{data.price}} <span>LE</span></td>
             <td class="text-dark">{{data.stoke}}</td>
-            <td ><button class="button-shadow" [routerLink]="['/shop/item',data.id]">View Product</button></td>
+            <td ><button class="button-shadow" [routerLink]="['/shop/item',data.id, data.type]">View Product</button></td>
           </tr>
         </tbody>
       </table>      

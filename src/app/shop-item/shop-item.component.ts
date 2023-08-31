@@ -12,77 +12,46 @@ import * as $ from 'jquery';
 })
 export class ShopItemComponent implements OnInit {
   itemData;
-  backUrl: string;
   deletedItem;
   itemId;
+  subtotal:number;
+  path:string;
 
   constructor(
     private q:QueryService,
     private data: DataPipeService,
-    private route: ActivatedRoute,
-    private router: Router
+    private route: ActivatedRoute
   ) 
   { 
     this.itemData={};
-    this.backUrl = this.q.getUrlHistoryObj();
+    this.getItemDetails();
   }
-  
+  getItemDetails(){
+    this.route.params.subscribe(param=>{
+      this.itemId= param.id;
+      if(param.type == "clothes"){
+        this.path = "./assets/shop.json"
+      }else if(param.type == "toys"){
+        this.path = "./assets/toys.json"
+      }
+      this.getItemData();
+    })
+  }
   getItemData(): void{
-    let path: string = this.backUrl;
-    this.q.getData(path).subscribe(
+    this.q.getData(this.path).subscribe(
       res => {
         res.forEach(element => {
           if(element.id == this.itemId){
             this.itemData = element;
+            this.subtotal = this.itemData.price;
           }
         });;
-
       },
       err => {
         console.log(err);
-        console.log('did not receive data');
       }
     );
   }
-
-  getItemData2(): void{
-    let path: string = './assets/shop.json';
-    this.q.getData(path).subscribe(
-      res => {
-        res.forEach(element => {
-          if(element.id == this.itemId){
-            element.quantity = 1;
-            this.itemData = element;
-          }
-        });;
-
-      },
-      err => {
-        console.log(err);
-        console.log('did not receive data');
-      }
-    );
-  }
-  getItemData3(): void{
-    let path: string = './assets/toys.json';
-    this.q.getData(path).subscribe(
-      res => {
-        res.forEach(element => {
-          if(element.id == this.itemId){
-            element.quantity = 1;
-            this.itemData = element;
-          }
-        });;
-
-      },
-      err => {
-        console.log(err);
-        console.log('did not receive data');
-      }
-    );
-  }
-
-  
   addItemToCart(id: number) {
     if(localStorage.getItem('cart')){
       var cart = JSON.parse(localStorage.getItem('cart'));
@@ -116,12 +85,13 @@ export class ShopItemComponent implements OnInit {
 
   plus(quantity){
     this.itemData.quantity = parseInt(quantity)+1;
+    this.subtotal = this.itemData.quantity * this.itemData.price;
   }
   
   minus(quantity){
     if(quantity > 1){
       this.itemData.quantity = parseInt(quantity)-1;
-     
+      this.subtotal = this.itemData.quantity * this.itemData.price;
     }
   }
   
@@ -131,32 +101,5 @@ export class ShopItemComponent implements OnInit {
         console.log($(".dropdown-menu button"));
         $("#myText").eq(0).html($(this).text());
     }); 
-    console.log(this.route.params.subscribe(param=>{
-      this.itemId= param.id;
-      this.getItemData();
-      this.getItemData2();
-      this.getItemData3();
-    }));
-      $(document).ready(function(){
-        function quen(){
-            let h= $("#price").text();
-            let n= $("#a").text();
-            let o= $("#itemTotal");
-            let tt = parseInt(h)  * parseInt(n) ;
-            o.text(tt);        
-        }
-          quen();
-
-          $(".minus").on("click",function(){
-            quen();
-          })
-          
-          $(".plus").on("click",function(){
-            quen();
-          })
-
-      });
-
-
   }
 }
