@@ -15,7 +15,7 @@ export class GameComponent implements OnInit {
     $(document).ready(function(){
 
       $(".female").click(function(){
-          $(".char").attr("src","../assets/images/games/girl4-02.png");
+          $(".char").attr("src","assets/images/games/girl4-02.png");
           $(".splash").css("display","none");
           $(".bg").css("display","block");
       });
@@ -38,7 +38,7 @@ export class GameComponent implements OnInit {
                       score++;
   
                   }
-                  $(".bg").css("background-image", "url('../assets/images/games/dubi-01.png')");
+                  $(".bg").css("background-image", "url('assets/images/games/dubi-01.png')");
                   $(".one").html("Dubai");
                   $(".two").html("Paris");
                   }
@@ -48,7 +48,7 @@ export class GameComponent implements OnInit {
                       score++;
   
                   }
-                  $(".bg").css("background-image", "url('../assets/images/games/usa2-01.png')");
+                  $(".bg").css("background-image", "url('assets/images/games/usa2-01.png')");
                   $(".one").html("EGYPT");
                   $(".two").html("USA");
               }
