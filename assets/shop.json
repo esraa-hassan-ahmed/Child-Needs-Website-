@@ -1,6 +1,7 @@
 [
     {
         "pic":"assets/images/shop/clothes1.jpg",
+        "type":"clothes",
         "name":"Bodysuit",
         "id":"1",
         "price":"240.00",
@@ -12,6 +13,7 @@
     },
     {
         "pic":"assets/images/shop/clothes2.jpg",
+        "type":"clothes",
         "name":"Bodysuit",
         "id":"2",
         "price":"100.00",
@@ -23,6 +25,7 @@
     },
     {
         "pic":"assets/images/shop/clothes3.jpg",
+        "type":"clothes",
         "name":"Bodysuit",
         "id":"3",
         "price":"350.00",
@@ -34,6 +37,7 @@
     },
     {
         "pic":"assets/images/shop/clothes4.jpg",
+        "type":"clothes",
         "name":"Jumpsuit",
         "id":"4",
         "price":"400.00",
@@ -45,6 +49,7 @@
     },
     {
         "pic":"assets/images/shop/clothes5.jpg",
+        "type":"clothes",
         "name":"Jumpsuit",
         "id":"5",
         "price":"600.00",
@@ -56,6 +61,7 @@
     },
     {
         "pic":"assets/images/shop/clothes6.jpg",
+        "type":"clothes",
         "name":"Bodysuit",
         "id":"6",
         "price":"750.00",
@@ -67,6 +73,7 @@
     },
     {
         "pic":"assets/images/shop/clothes7.jpg",
+        "type":"clothes",
         "name":"Bodysuit",
         "id":"7",
         "price":"200.00",
@@ -78,6 +85,7 @@
     },
     {
         "pic":"assets/images/shop/clothes8.jpg",
+        "type":"clothes",
         "name":"Baby Set",
         "id":"8",
         "price":"390.00",
@@ -89,6 +97,7 @@
     },
     {
         "pic":"assets/images/shop/clothes9.jpg",
+        "type":"clothes",
         "name":"Bodysuit",
         "id":"9",
         "price":"800.00",

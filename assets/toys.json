@@ -1,6 +1,7 @@
 [
     {
         "pic":"assets/images/toys/toy1.jpg",
+        "type": "toys",
         "name":"Dominoes",
         "id":"10",
         "price":"50.00",
@@ -11,6 +12,7 @@
     },
     {
         "pic":"assets/images/toys/toy2.jpg",
+        "type": "toys",
         "name":"Buzz lightyear",
         "id":"11",
         "price":"100.00",
@@ -21,6 +23,7 @@
     },
     {
         "pic":"assets/images/toys/toy3.jpg",
+        "type": "toys",
         "name":"Rubik's cubes",
         "id":"12",
         "price":"30.00",
@@ -31,6 +34,7 @@
     },
     {
         "pic":"assets/images/toys/toy4.jpg",
+        "type": "toys",
         "name":"Rubic Cube",
         "id":"13",
         "price":"16.00",
@@ -41,6 +45,7 @@
     },
     {
         "pic":"assets/images/toys/toy5.jpg",
+        "type": "toys",
         "name":"UNO",
         "id":"14",
         "price":"13.75",
@@ -51,6 +56,7 @@
     },
     {
         "pic":"assets/images/toys/toy6.jpg",
+        "type": "toys",
         "name":"Edu Fun",
         "id":"15",
         "price":"310.00",
@@ -61,6 +67,7 @@
     },
     {
         "pic":"assets/images/toys/toy7.jpg",
+        "type": "toys",
         "name":"Farm Dominoes",
         "id":"16",
         "price":"40.00",
@@ -71,6 +78,7 @@
     },
     {
         "pic":"assets/images/toys/toy8.jpg",
+        "type": "toys",
         "name":"Twisting Insect",
         "id":"17",
         "price":"35.90",
@@ -81,6 +89,7 @@
     },
     {
         "pic":"assets/images/toys/toy9.jpg",
+        "type": "toys",
         "name":"Sassy Baby",
         "id":"18",
         "price":"208.00",
